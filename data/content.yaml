@@ -1,0 +1,75 @@
+BasicInfo:
+  FirstName: Jack
+  LastName: Tracey
+  Photo: /img/avatar.jpg
+  Contacts:
+    - Icon: fas fa-envelope
+      Info: <a href="mailto:jack@jacktracey.co.uk">E-mail Me</a>
+    - Icon: fab fa-linkedin-in
+      Info: <a href="https://www.linkedin.com/in/jacktracey93" target="_blank">LinkedIn Profile</a>
+    - Icon: fab fa-github
+      Info: <a href="https://github.com/jtracey93" target="_blank">GitHub Profile</a>
+
+Profile: Senior Cloud Solutions Architect at Microsoft with extensive experience in Azure cloud architecture, infrastructure as code, and enterprise platform engineering. Passionate about helping organisations adopt cloud-native solutions, automate infrastructure, and build scalable, resilient platforms. Skilled in translating complex technical requirements into practical, maintainable architectures.
+
+Experience:
+  - Employer: Microsoft
+    Place: United Kingdom
+    Positions:
+      - Title: Senior Cloud Solutions Architect
+        Date: Jan 2020 - Present
+        Details:
+          - Architect and deliver enterprise-scale Azure landing zones for strategic customers
+          - Lead technical engagements covering infrastructure as code, governance, and platform engineering
+          - Develop and maintain open-source tooling for Azure architecture validation and deployment
+          - Mentor and guide customers through cloud adoption framework methodologies
+        Badges:
+          - Azure
+          - Terraform
+          - Bicep
+          - GitHub Actions
+          - PowerShell
+          - Kubernetes
+
+Education:
+  - Course: Computer Science
+    Place: University (Placeholder)
+    Date: "2015"
+    Details: Placeholder — update with actual education details
+
+Skills:
+  - Family: Cloud Platforms
+    Items:
+      - Azure
+      - Azure Landing Zones
+      - Azure Policy
+      - Azure Resource Manager
+  - Family: Infrastructure as Code
+    Items:
+      - Terraform
+      - Bicep
+      - ARM Templates
+  - Family: DevOps & Automation
+    Items:
+      - GitHub Actions
+      - Azure DevOps
+      - PowerShell
+      - Bash
+  - Family: Containers & Orchestration
+    Items:
+      - Kubernetes
+      - Docker
+      - AKS
+
+Languages:
+  - Name: English
+    Level: Native
+
+Diplomas:
+  - "Placeholder — update with actual certifications"
+
+Interests:
+  - Cloud Architecture
+  - Open Source
+  - Infrastructure as Code
+  - Platform Engineering
