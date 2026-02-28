@@ -50,8 +50,9 @@
                     chevron.className = 'collapsible-chevron';
                     title.appendChild(chevron);
                 }
-                // Mobile: collapsed by default; Desktop: expanded by default
-                if (mq.matches) {
+                // Mobile: collapsed by default (except profile); Desktop: expanded by default
+                var isProfile = h.closest('#profile') !== null;
+                if (mq.matches && !isProfile) {
                     content.classList.add('collapsed');
                     h.classList.add('is-collapsed');
                 } else {
