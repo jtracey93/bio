@@ -1,0 +1,76 @@
+{{ $data := or (index .Site.Data .Site.Language.Lang).content .Site.Data.content }}
+{{ .Scratch.Set "data" $data }}
+<!DOCTYPE html>
+<html lang="en">
+    {{ partial "head.html" . }}
+<body>
+    <div class="content">
+        {{ if .Site.Params.swapColumns }}
+        <div class="content__left content__swapped__left">
+        {{ else }}
+        <div class="content__left">
+        {{ end }}
+            <div class="mobileHeader">
+                <img class="mobileHeader__avatar" src="{{ $data.BasicInfo.Photo }}" alt="{{ $data.BasicInfo.FirstName }} {{ $data.BasicInfo.LastName }}" />
+                <h1 class="mainHeading">{{ $data.BasicInfo.FirstName }} <span>{{ $data.BasicInfo.LastName }}</span></h1>
+            </div>
+            {{ partial "_profile.html" $data }}
+            {{ partial "_experience.html" $data }}
+            {{ partial "_education.html" $data }}
+            {{ partial "_references.html" $data }}
+        </div>
+        {{ if .Site.Params.swapColumns }}
+        <div class="content__right content__swapped__right">
+        {{ else }}
+        <div class="content__right">
+        {{ end }}
+            {{ partial "_avatar.html" $data }}
+            {{ partial "_contacts.html" $data }}
+            {{ partial "_skills.html" $data }}
+            {{ partial "_languages.html" $data }}
+            {{ partial "_diplomas.html" $data }}
+            {{ partial "_interests.html" $data }}
+        </div>
+    </div>
+    <script>
+    (function() {
+        var mq = window.matchMedia('(max-width: 820px)');
+        function setup() {
+            var headings = document.querySelectorAll('.section__heading, .sideSection__heading');
+            headings.forEach(function(h) {
+                var content = h.nextElementSibling;
+                if (!content) return;
+                // Add collapsible classes if not already present
+                content.classList.add('collapsible');
+                h.classList.add('collapsible-heading');
+                // Add chevron if not already there
+                var title = h.querySelector('.section__title, .sideSection__title');
+                if (title && !title.querySelector('.collapsible-chevron')) {
+                    var chevron = document.createElement('span');
+                    chevron.className = 'collapsible-chevron';
+                    title.appendChild(chevron);
+                }
+                // Mobile: collapsed by default; Desktop: expanded by default
+                if (mq.matches) {
+                    content.classList.add('collapsed');
+                    h.classList.add('is-collapsed');
+                } else {
+                    content.classList.remove('collapsed');
+                    h.classList.remove('is-collapsed');
+                }
+            });
+        }
+        setup();
+        mq.addEventListener('change', setup);
+        document.addEventListener('click', function(e) {
+            var heading = e.target.closest('.section__heading, .sideSection__heading');
+            if (!heading) return;
+            var content = heading.nextElementSibling;
+            if (!content) return;
+            content.classList.toggle('collapsed');
+            heading.classList.toggle('is-collapsed');
+        });
+    })();
+    </script>
+</body>
+</html>
