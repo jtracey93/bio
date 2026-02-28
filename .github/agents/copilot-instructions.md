@@ -3,6 +3,7 @@
 Auto-generated from all feature plans. Last updated: 2026-02-28
 
 ## Active Technologies
+- N/A — static files only; content in `data/content.yaml`, configuration in `config.toml` (001-initial-bio-setup)
 
 - Hugo Extended v0.157.0 (latest stable) + Go templates + YAML data files + almeida-cv theme (commit `7bf8228` from `ineesalmeida/almeida-cv`), GitHub Actions (`actions/checkout`, `peaceiris/actions-hugo`, `actions/upload-pages-artifact`, `actions/deploy-pages`) (001-initial-bio-setup)
 
@@ -22,6 +23,7 @@ tests/
 Hugo Extended v0.157.0 (latest stable) + Go templates + YAML data files: Follow standard conventions
 
 ## Recent Changes
+- 001-initial-bio-setup: Added Hugo Extended v0.157.0 (latest stable) + Go templates + YAML data files + almeida-cv theme (commit `7bf8228` from `ineesalmeida/almeida-cv`), GitHub Actions (`actions/checkout`, `peaceiris/actions-hugo`, `actions/upload-pages-artifact`, `actions/deploy-pages`)
 
 - 001-initial-bio-setup: Added Hugo Extended v0.157.0 (latest stable) + Go templates + YAML data files + almeida-cv theme (commit `7bf8228` from `ineesalmeida/almeida-cv`), GitHub Actions (`actions/checkout`, `peaceiris/actions-hugo`, `actions/upload-pages-artifact`, `actions/deploy-pages`)
 

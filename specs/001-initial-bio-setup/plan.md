@@ -5,7 +5,7 @@
 
 ## Summary
 
-Set up a Hugo static site using the almeida-cv theme (commit `7bf8228`) to render Jack Tracey's professional CV/resume at `bio.jacktracey.co.uk`. All content is driven from a single YAML data file (`data/content.yaml`). The theme is copied directly into the repository's `themes/almeida-cv/` directory (no Git submodules). A GitHub Actions workflow deploys the built site to GitHub Pages via the artifact-based `actions/deploy-pages` action on every merge to `main`. The site is accessible on both the custom domain and the default GitHub Pages URL (which redirects to the custom domain).
+Set up a Hugo static site using the almeida-cv theme (commit `7bf8228`) to render Jack Tracey's professional CV/resume at `bio.jacktracey.co.uk`. All content is driven from a single YAML data file (`data/content.yaml`). The theme is copied directly into the repository's `themes/almeida-cv/` directory (no Git submodules). A GitHub Actions workflow deploys the built site to GitHub Pages via the artifact-based `actions/deploy-pages` action on every merge to `main`, with a `workflow_dispatch` trigger for out-of-band re-deployments during troubleshooting. The site is accessible on both the custom domain and the default GitHub Pages URL (which redirects to the custom domain).
 
 ## Technical Context
 
@@ -28,8 +28,8 @@ Set up a Hugo static site using the almeida-cv theme (commit `7bf8228`) to rende
 | I | Theme-First, Low Maintenance | PASS | Using almeida-cv theme as-is; no custom CSS/JS overrides planned. Theme copied to `themes/` per constitution (no submodules). |
 | II | Content as Data | PASS | All CV content in `data/content.yaml`; no content hard-coded in templates. |
 | III | Mobile-First Responsive Design | PASS | almeida-cv theme has built-in responsive CSS; no custom layout changes needed. |
-| IV | PDF Export/Print Parity | PASS | Theme includes print stylesheet; browser Print-to-PDF produces clean A4 output from same content source. |
-| V | Automated Deployment (NON-NEGOTIABLE) | PASS | GitHub Actions workflow builds Hugo site and deploys via `actions/deploy-pages` on merge to `main`. No manual deployment steps. |
+| IV | PDF Export/Print Parity | PASS | Browser print-to-PDF via the theme's built-in `@media print` stylesheet is the primary export mechanism (constitution v1.1.0). CI-based PDF tooling is NOT required. Same `content.yaml` source for both web and print. |
+| V | Automated Deployment (NON-NEGOTIABLE) | PASS | GitHub Actions workflow builds Hugo site and deploys via `actions/deploy-pages` on merge to `main`. `workflow_dispatch` trigger for out-of-band re-deployment. No manual deployment steps. |
 | VI | Simplicity & YAGNI | PASS | Minimal configuration: Hugo + theme + YAML data + one workflow file. No JavaScript frameworks, no extra build tools. |
 
 **Gate result**: ALL PASS — proceed to Phase 0.
@@ -111,8 +111,8 @@ Both URLs are accessible. The default GitHub Pages URL automatically redirects t
 | I | Theme-First, Low Maintenance | PASS | Theme copied to `themes/almeida-cv/` from commit `7bf8228`. No custom CSS/JS overrides. No fork. Hugo lookup order available for future overrides. |
 | II | Content as Data | PASS | All content in `data/content.yaml` (documented in data-model.md). Templates read from `.Site.Data.content`. No hard-coded content. |
 | III | Mobile-First Responsive Design | PASS | Theme SCSS includes responsive breakpoints. No custom layout additions that could break mobile rendering. |
-| IV | PDF Export/Print Parity | PASS | Theme print stylesheet handles PDF output. `pages` param controls A4 pagination. Same `content.yaml` source for both web and print. No additional tooling required (principle VI respected). |
-| V | Automated Deployment (NON-NEGOTIABLE) | PASS | Workflow contract defined in `contracts/deploy-workflow.md`. Triggered on push to `main` (via PR merge). Build → upload artifact → deploy. Manual deployment steps: zero. |
+| IV | PDF Export/Print Parity | PASS | Browser print-to-PDF via the theme's built-in `@media print` stylesheet is the primary export mechanism (constitution v1.1.0). `pages` param controls A4 pagination. Same `content.yaml` source for both web and print. CI-based PDF tooling NOT required (principles IV + VI). |
+| V | Automated Deployment (NON-NEGOTIABLE) | PASS | Workflow contract defined in `contracts/deploy-workflow.md`. Triggered on push to `main` (via PR merge) + `workflow_dispatch` for out-of-band re-deployment (FR-006). Build → upload artifact → deploy. Manual deployment steps: zero. |
 | VI | Simplicity & YAGNI | PASS | Hugo + theme + YAML + one workflow file. Zero JavaScript frameworks. Zero additional build tools. Every dependency justified in research.md. |
 
 **Gate result**: ALL PASS — design is constitution-compliant.

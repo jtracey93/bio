@@ -1,18 +1,18 @@
 <!--
   Sync Impact Report
   ==================
-  Version change: N/A → 1.0.0 (initial ratification)
-  Modified principles: N/A (first version)
-  Added sections:
-    - Core Principles (I–VI)
-    - Technology Stack & Constraints
-    - Development Workflow
-    - Governance
-  Removed sections: N/A
+  Version change: 1.0.0 → 1.1.0
+  Modified principles:
+    - IV. PDF Export/Print Parity: relaxed automation
+      requirement to permit browser print-to-PDF via the
+      theme's built-in print stylesheet. Removed mandate
+      for CI-based PDF generation tooling.
+  Added sections: None
+  Removed sections: None
   Templates requiring updates:
-    - .specify/templates/plan-template.md ✅ compatible (no changes needed)
-    - .specify/templates/spec-template.md ✅ compatible (no changes needed)
-    - .specify/templates/tasks-template.md ✅ compatible (no changes needed)
+    - .specify/templates/plan-template.md ✅ no changes needed
+    - .specify/templates/spec-template.md ✅ no changes needed
+    - .specify/templates/tasks-template.md ✅ no changes needed
   Follow-up TODOs: None
 -->
 
@@ -59,14 +59,25 @@ harms the user's professional image.
 ### IV. PDF Export/Print Parity
 
 The site MUST provide a mechanism to export the full
-bio/CV/resume to a well-formatted PDF or print to PDF. The PDF/Print output MUST
-faithfully reflect the same content rendered on the website.
-The export process MUST be automated (reproducible via a single
-command or CI step) and MUST NOT require manual formatting.
+bio/CV/resume to a well-formatted PDF. The theme's built-in
+print stylesheet is the primary export mechanism: the user
+prints the page to PDF via the browser (Ctrl+P / Cmd+P →
+Save as PDF). The PDF output MUST faithfully reflect the same
+content rendered on the website and MUST NOT require manual
+formatting or post-processing.
 
-**Rationale**: Job applications universally require PDF uploads;
-automated export from the same source content eliminates manual
-copy-paste errors and formatting drift.
+A dedicated CI-based PDF generation tool is NOT required.
+The browser print-to-PDF workflow satisfies this principle
+because the theme's `@media print` rules ensure a consistent,
+reproducible output from the same single source of truth
+(`data/content.yaml`).
+
+**Rationale**: Job applications universally require PDF uploads.
+Browser print-to-PDF from a purpose-built print stylesheet
+delivers a clean, professional document without adding CI
+tooling complexity (respecting principle VI). Content parity
+is guaranteed because both the web view and the print output
+render from the same data file.
 
 ### V. Automated Deployment (NON-NEGOTIABLE)
 
@@ -101,9 +112,9 @@ proportional benefit.
   a Hugo module by copying the `theme/` directory from the theme repo into this project and referencing it in `config.toml`. Do not use Git submodules or external dependencies for the theme so custom overrides can be easily managed within the same repository.
 - **Hosting**: GitHub Pages, served at `bio.jacktracey.co.uk`
 - **CI/CD**: GitHub Actions (workflow files in `.github/workflows/`)
-- **PDF Export**: Browser-based print stylesheet or a Hugo/CLI
-  tool (e.g. `hugo-to-pdf`, `wkhtmltopdf`, Puppeteer); chosen
-  tool MUST run in CI without manual intervention
+- **PDF Export**: Browser print-to-PDF via the theme's
+  built-in `@media print` stylesheet. No additional CI tooling
+  required
 - **Content Format**: YAML data files in `data/` and/or
   Markdown with front-matter
 - **Version Control**: Git; `main` branch is the deployment
@@ -121,8 +132,9 @@ proportional benefit.
    The site MUST build without errors or warnings.
 4. **PR review**: All PRs MUST pass the GitHub Actions build
    before merge. Force-pushes to `main` are prohibited.
-5. **PDF validation**: After any content change, verify the PDF
-   export renders correctly (automated in CI where feasible).
+5. **PDF validation**: After any content change, verify the
+   browser print-to-PDF output renders correctly (open the
+   page, Ctrl+P, confirm clean layout and pagination).
 
 ## Governance
 
@@ -141,4 +153,4 @@ or external guides when they conflict.
   principles above. The CI pipeline enforces what it can
   (build success, deployment); reviewers enforce the rest.
 
-**Version**: 1.0.0 | **Ratified**: 2026-02-28 | **Last Amended**: 2026-02-28
+**Version**: 1.1.0 | **Ratified**: 2026-02-28 | **Last Amended**: 2026-02-28

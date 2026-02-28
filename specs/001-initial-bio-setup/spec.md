@@ -82,7 +82,7 @@ Jack wants to update his job title, add a new role, or modify his skills by edit
 ### Session 2026-02-28
 
 - Q: What is Jack Tracey's current job title at Microsoft? → A: Senior Cloud Solutions Architect
-- Q: Which GitHub Pages deployment mechanism should the workflow use? → A: Artifact-based deploy via `actions/deploy-pages` (GitHub Pages source = "GitHub Actions"), triggered on merge to `main` from PRs only; branch protection prevents direct pushes.
+- Q: Which GitHub Pages deployment mechanism should the workflow use? → A: Artifact-based deploy via `actions/deploy-pages` (GitHub Pages source = "GitHub Actions"), triggered on merge to `main` from PRs only; branch protection prevents direct pushes. A `workflow_dispatch` trigger is also included for out-of-band deployments during troubleshooting.
 
 ## Requirements *(mandatory)*
 
@@ -93,7 +93,7 @@ Jack wants to update his job title, add a new role, or modify his skills by edit
 - **FR-003**: The site MUST use the almeida-cv Hugo theme, copied into the repository's `themes/` directory.
 - **FR-004**: The site MUST be responsive and render correctly on viewports from 320px width upward.
 - **FR-005**: The site MUST include a print stylesheet that produces a clean, professional PDF when using the browser's Print to PDF function.
-- **FR-006**: A GitHub Actions workflow MUST build the Hugo site and deploy to GitHub Pages using the artifact-based `actions/deploy-pages` action on every merge to `main`. The `main` branch MUST be protected with branch protection rules that prevent direct pushes; all changes arrive via pull requests.
+- **FR-006**: A GitHub Actions workflow MUST build the Hugo site and deploy to GitHub Pages using the artifact-based `actions/deploy-pages` action on every merge to `main`. The workflow MUST also support a `workflow_dispatch` trigger for out-of-band deployments during troubleshooting or debugging. The `main` branch MUST be protected with branch protection rules that prevent direct pushes; all changes arrive via pull requests.
 - **FR-007**: The site MUST be served at the custom domain `bio.jacktracey.co.uk`.
 - **FR-008**: The content data file MUST include placeholder/initial content for Jack Tracey including: name, current title (Senior Cloud Solutions Architect), current employer (Microsoft), a professional summary, at least one work experience entry, a skills section, and contact details.
 - **FR-009**: The GitHub Actions workflow MUST fail (and not deploy) if the Hugo build produces errors.
@@ -103,7 +103,7 @@ Jack wants to update his job title, add a new role, or modify his skills by edit
 
 - **Content Profile**: The primary data entity representing Jack Tracey's professional information. Contains: name, title (Senior Cloud Solutions Architect), employer (Microsoft), summary/about, work experience entries (each with role, company, dates, description), skills (grouped by category), education entries, and contact links (LinkedIn, GitHub, email).
 - **Theme**: The almeida-cv Hugo theme providing layout, styling, and responsive design. Referenced by the Hugo configuration and stored in the `themes/` directory.
-- **Deployment Pipeline**: The GitHub Actions workflow that builds the site and deploys it. Uses the artifact-based `actions/deploy-pages` action with GitHub Pages source set to "GitHub Actions". Triggered on merge to `main` (via pull requests only; direct pushes are blocked by branch protection). Publishes built static files as a GitHub Pages artifact.
+- **Deployment Pipeline**: The GitHub Actions workflow that builds the site and deploys it. Uses the artifact-based `actions/deploy-pages` action with GitHub Pages source set to "GitHub Actions". Triggered on merge to `main` (via pull requests only; direct pushes are blocked by branch protection) and via `workflow_dispatch` for manual re-deployment. Publishes built static files as a GitHub Pages artifact.
 
 ## Success Criteria *(mandatory)*
 
@@ -121,7 +121,7 @@ Jack wants to update his job title, add a new role, or modify his skills by edit
 - Jack Tracey currently works at Microsoft. Placeholder content will use this as the primary employer.
 - The GitHub repository `jtracey93/bio` already exists and the user has admin access.
 - DNS for `bio.jacktracey.co.uk` will be configured manually by the user (a CNAME record pointing to `jtracey93.github.io`). This is documented as a manual step.
-- GitHub Pages will be configured to use the `gh-pages` branch or GitHub Actions deployment. This requires a one-time manual settings change in the repository.
+- GitHub Pages will be configured to use GitHub Actions deployment (source = "GitHub Actions"). This requires a one-time manual settings change in the repository.
 - The almeida-cv theme supports Hugo's data-file driven content model. If it requires Markdown content files instead, the data structure will adapt accordingly.
 - No authentication or access control is needed — this is a fully public site.
 

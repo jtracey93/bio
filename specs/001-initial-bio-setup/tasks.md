@@ -88,7 +88,7 @@ Create `static/CNAME` containing a single line: `bio.jacktracey.co.uk` (no trail
 
 ## Phase 4: User Story 2 — Automated Deployment on Merge (Priority: P2)
 
-**Goal**: When a pull request is merged to `main`, GitHub Actions automatically builds the Hugo site and deploys it to GitHub Pages via the artifact-based `actions/deploy-pages` action.
+**Goal**: When a pull request is merged to `main`, GitHub Actions automatically builds the Hugo site and deploys it to GitHub Pages via the artifact-based `actions/deploy-pages` action. A `workflow_dispatch` trigger also supports out-of-band re-deployments during troubleshooting (FR-006).
 
 **Independent Test**: Merge a trivial content change to `main` and verify the GitHub Actions workflow completes successfully and the change appears at the GitHub Pages URL.
 
@@ -100,7 +100,7 @@ Create `static/CNAME` containing a single line: `bio.jacktracey.co.uk` (no trail
 
 Create `.github/workflows/deploy.yml` matching the contract in `contracts/deploy-workflow.md` and the detailed structure in research.md §5:
 
-- **Trigger**: `push` to `main` branch + `workflow_dispatch` for manual runs
+- **Trigger**: `push` to `main` branch + `workflow_dispatch` for out-of-band deployments during troubleshooting (FR-006)
 - **Permissions**: `contents: read`, `pages: write`, `id-token: write`
 - **Concurrency**: group `pages`, `cancel-in-progress: false`
 - **Job `build`**: `actions/checkout@v4` → `peaceiris/actions-hugo@v3` (hugo-version `0.157.0`, extended `true`) → `hugo --minify` → `actions/upload-pages-artifact@v3` (path `./public`)
@@ -123,7 +123,7 @@ Create `.github/workflows/deploy.yml` matching the contract in `contracts/deploy
 
 ### T009 Details
 
-The almeida-cv theme includes a built-in print stylesheet (via `assets/scss/` with `@media print` rules). The `[params].pages` value in `config.toml` (set to `1` in T004) controls how many A4 pages the print layout spans. After content is added in T005:
+The almeida-cv theme includes a built-in print stylesheet (via `assets/scss/` with `@media print` rules) — this is the primary PDF export mechanism per constitution v1.1.0 (principle IV). CI-based PDF tooling is NOT required. The `[params].pages` value in `config.toml` (set to `1` in T004) controls how many A4 pages the print layout spans. After content is added in T005:
 
 1. Run `hugo server` and open `localhost:1313`
 2. Press Ctrl+P to open print preview
@@ -190,7 +190,7 @@ Cross-reference each functional requirement against the implemented files:
 | FR-003 | almeida-cv theme copied to themes/ | T003 (themes/almeida-cv/) |
 | FR-004 | Responsive 320px+ | T003 (theme responsive SCSS) |
 | FR-005 | Print stylesheet for PDF | T003 (theme print CSS) + T009 (pages param) |
-| FR-006 | GitHub Actions with deploy-pages | T008 (deploy.yml) |
+| FR-006 | GitHub Actions with deploy-pages + workflow_dispatch | T008 (deploy.yml) |
 | FR-007 | Custom domain bio.jacktracey.co.uk | T007 (CNAME) + manual DNS step |
 | FR-008 | Jack Tracey placeholder content | T005 (content.yaml) |
 | FR-009 | Workflow fails on build errors | T008 (hugo --minify exit code gates deploy) |
