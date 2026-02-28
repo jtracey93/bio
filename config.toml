@@ -1,0 +1,17 @@
+baseURL = "https://bio.jacktracey.co.uk/"
+languageCode = "en"
+title = "Jack Tracey - Senior Cloud Solutions Architect"
+theme = "almeida-cv"
+disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap"]
+
+[params]
+  colorPrimary = "#1B9CE2"
+  colorSecondary = "#9A8C98"
+  colorPageBackground = "#F2F7F8"
+  colorRightColumnBackground = "#f5f5f5"
+  colorRightColumnHeadingText = "#4A4E69"
+  colorRightColumnBodyText = "#666"
+  pages = 1
+  swapColumns = false
+  footerNote = ""
+  enableMetaTags = true

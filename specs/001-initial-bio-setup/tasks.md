@@ -19,8 +19,8 @@
 
 **Purpose**: Create the Hugo project skeleton with all required directories
 
-- [ ] T001 Create project directory structure per plan.md (data/, static/img/, themes/, .github/workflows/)
-- [ ] T002 [P] Create .gitignore ignoring public/, resources/, .hugo_build.lock at .gitignore
+- [x] T001 Create project directory structure per plan.md (data/, static/img/, themes/, .github/workflows/)
+- [x] T002 [P] Create .gitignore ignoring public/, resources/, .hugo_build.lock at .gitignore
 
 ---
 
@@ -30,8 +30,8 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete. Hugo cannot build without a theme and config file.
 
-- [ ] T003 [P] Copy almeida-cv theme (commit 7bf8228) from ineesalmeida/almeida-cv into themes/almeida-cv/
-- [ ] T004 [P] Create Hugo site configuration with theme parameters in config.toml
+- [x] T003 [P] Copy almeida-cv theme (commit 7bf8228) from ineesalmeida/almeida-cv into themes/almeida-cv/
+- [x] T004 [P] Create Hugo site configuration with theme parameters in config.toml
 
 ### T003 Details
 
@@ -59,9 +59,9 @@ Create `config.toml` at repository root with the following configuration (from r
 
 ### Implementation for User Story 1
 
-- [ ] T005 [P] [US1] Create CV content data file with Jack Tracey's professional information in data/content.yaml
-- [ ] T006 [P] [US1] Add placeholder avatar image in static/img/avatar.jpg
-- [ ] T007 [P] [US1] Create custom domain CNAME file containing bio.jacktracey.co.uk in static/CNAME
+- [x] T005 [P] [US1] Create CV content data file with Jack Tracey's professional information in data/content.yaml
+- [x] T006 [P] [US1] Add placeholder avatar image in static/img/avatar.jpg
+- [x] T007 [P] [US1] Create custom domain CNAME file containing bio.jacktracey.co.uk in static/CNAME
 
 ### T005 Details
 
@@ -94,7 +94,7 @@ Create `static/CNAME` containing a single line: `bio.jacktracey.co.uk` (no trail
 
 ### Implementation for User Story 2
 
-- [ ] T008 [US2] Create GitHub Actions deployment workflow per contracts/deploy-workflow.md in .github/workflows/deploy.yml
+- [x] T008 [US2] Create GitHub Actions deployment workflow per contracts/deploy-workflow.md in .github/workflows/deploy.yml
 
 ### T008 Details
 
@@ -119,7 +119,7 @@ Create `.github/workflows/deploy.yml` matching the contract in `contracts/deploy
 
 ### Implementation for User Story 3
 
-- [ ] T009 [US3] Verify and tune pages parameter in config.toml for correct A4 print pagination
+- [x] T009 [US3] Verify and tune pages parameter in config.toml for correct A4 print pagination
 
 ### T009 Details
 
@@ -143,7 +143,7 @@ The almeida-cv theme includes a built-in print stylesheet (via `assets/scss/` wi
 
 ### Implementation for User Story 4
 
-- [ ] T010 [US4] Create project README with local development setup and content editing guide in README.md
+- [x] T010 [US4] Create project README with local development setup and content editing guide in README.md
 
 ### T010 Details
 
@@ -167,8 +167,8 @@ The README itself is the deliverable for US4 — it documents the single-file ed
 
 **Purpose**: Final validation across all user stories and requirements
 
-- [ ] T011 Run quickstart.md validation to verify Hugo builds successfully and page renders at localhost:1313
-- [ ] T012 [P] Verify all functional requirements (FR-001 through FR-010) are addressed by implementation
+- [x] T011 Run quickstart.md validation to verify Hugo builds successfully and page renders at localhost:1313
+- [x] T012 [P] Verify all functional requirements (FR-001 through FR-010) are addressed by implementation
 
 ### T011 Details
 
