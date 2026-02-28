@@ -1,0 +1,19 @@
+// Project-level overrides — loaded via Hugo's lookup order (project assets/ > theme assets/)
+
+// Scale up all text (62.5% default → 80%) for readability
+html {
+    font-size: 80%;
+}
+
+.contact {
+    &__item {
+        font-size: 1.4rem !important;
+
+        & > i {
+            font-size: 1.2rem !important;
+            width: 2.4rem !important;
+            height: 2.4rem !important;
+            padding-top: 0.6rem;
+        }
+    }
+}

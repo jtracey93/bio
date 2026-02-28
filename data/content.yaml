@@ -1,14 +1,14 @@
 BasicInfo:
   FirstName: Jack
   LastName: Tracey
-  Photo: img/avatar.jpg
+  Photo: /img/avatar.jpg
   Contacts:
     - Icon: fas fa-envelope
-      Info: <a href="mailto:jack@jacktracey.co.uk">jack@jacktracey.co.uk</a>
+      Info: <a href="mailto:jack@jacktracey.co.uk">E-mail Me</a>
     - Icon: fab fa-linkedin-in
-      Info: <a href="https://www.linkedin.com/in/jacktracey93" target="_blank">linkedin.com/in/jacktracey93</a>
+      Info: <a href="https://www.linkedin.com/in/jacktracey93" target="_blank">LinkedIn Profile</a>
     - Icon: fab fa-github
-      Info: <a href="https://github.com/jtracey93" target="_blank">github.com/jtracey93</a>
+      Info: <a href="https://github.com/jtracey93" target="_blank">GitHub Profile</a>
 
 Profile: Senior Cloud Solutions Architect at Microsoft with extensive experience in Azure cloud architecture, infrastructure as code, and enterprise platform engineering. Passionate about helping organisations adopt cloud-native solutions, automate infrastructure, and build scalable, resilient platforms. Skilled in translating complex technical requirements into practical, maintainable architectures.
 

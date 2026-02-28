@@ -5,13 +5,19 @@ theme = "almeida-cv"
 disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap"]
 
 [params]
-  colorPrimary = "#1B9CE2"
-  colorSecondary = "#9A8C98"
-  colorPageBackground = "#F2F7F8"
-  colorRightColumnBackground = "#f5f5f5"
-  colorRightColumnHeadingText = "#4A4E69"
-  colorRightColumnBodyText = "#666"
+  colorPrimary = "#ea9653"
+  colorSecondary = "#989898"
+  colorPageBackground = "#fff"
+  colorRightColumnBackground = "#f0c8a0"
+  colorRightColumnHeadingText = "#4a3728"
+  colorRightColumnBodyText = "#4a3728"
+  colorRightColumnIconPrimary = "#fff"
+  colorRightColumnIconBackground = "#ea9653"
+  colorIconPrimary = "#fff"
+  colorIconBackground = "#ea9653"
+  colorLight = "#fff"
+  colorDark = "#737374"
   pages = 1
   swapColumns = false
-  footerNote = ""
+  footerNote = " "
   enableMetaTags = true
