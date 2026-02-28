@@ -1,8 +1,19 @@
 // Project-level overrides — loaded via Hugo's lookup order (project assets/ > theme assets/)
 
-// Scale up all text (62.5% default → 80%) for readability
-html {
-    font-size: 80%;
+// Scale up all text for screen readability only; print stays at theme default for A4 fit
+@media screen {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media print {
+    html {
+        font-size: 62.5%;
+    }
+    .mobileHeader__avatar {
+        display: none !important;
+    }
 }
 
 .contact {
@@ -15,5 +26,119 @@ html {
             height: 2.4rem !important;
             padding-top: 0.6rem;
         }
+    }
+}
+
+// Mobile header avatar — hidden on desktop/print, shown on small screens
+.mobileHeader {
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+        display: none;
+    }
+}
+
+// Mobile responsive layout
+@media screen and (max-width: 820px) {
+    .mobileHeader {
+        gap: 1.5rem;
+
+        &__avatar {
+            display: block;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+    }
+
+    .content {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        overflow: visible;
+    }
+
+    .content__left {
+        float: none;
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .content__right {
+        position: relative;
+        float: none;
+        width: 100%;
+        height: auto;
+        right: auto;
+        padding: 2rem;
+        box-shadow: none;
+    }
+
+    .avatar {
+        height: 14rem;
+    }
+
+    .mainHeading {
+        font-size: 3.2rem;
+    }
+
+    .experience__header,
+    .experience__subheader {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .experience__date,
+    .experience__place {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+// Collapsible sections — all screen sizes
+@media screen {
+    .collapsible {
+        overflow: hidden;
+        max-height: 200rem;
+        transition: max-height 0.35s ease-in-out;
+    }
+
+    .collapsed {
+        max-height: 0;
+    }
+
+    .collapsible-heading {
+        cursor: pointer;
+        user-select: none;
+    }
+
+    // Chevron indicator for left-column sections (title has ::after line)
+    .section .collapsible-heading {
+        .section__title {
+            padding-right: 2.4rem;
+        }
+    }
+
+    .collapsible-chevron {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        border-right: 2px solid currentColor;
+        border-bottom: 2px solid currentColor;
+        transform: rotate(-135deg);
+        transition: transform 0.3s ease;
+        vertical-align: middle;
+        margin-left: 0.8rem;
+        position: relative;
+        top: 0.1rem;
+        opacity: 0.5;
+    }
+
+    .is-collapsed .collapsible-chevron {
+        transform: rotate(45deg);
     }
 }
