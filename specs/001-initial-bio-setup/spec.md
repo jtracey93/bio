@@ -77,6 +77,13 @@ Jack wants to update his job title, add a new role, or modify his skills by edit
 - What happens if the content data file has a YAML syntax error? Hugo should report a clear build error and the CI pipeline should fail.
 - How does the page look when all optional sections (e.g. certifications, projects) are empty? The theme should gracefully hide empty sections rather than showing blank headers.
 
+## Clarifications
+
+### Session 2026-02-28
+
+- Q: What is Jack Tracey's current job title at Microsoft? → A: Senior Cloud Solutions Architect
+- Q: Which GitHub Pages deployment mechanism should the workflow use? → A: Artifact-based deploy via `actions/deploy-pages` (GitHub Pages source = "GitHub Actions"), triggered on merge to `main` from PRs only; branch protection prevents direct pushes.
+
 ## Requirements *(mandatory)*
 
 ### Functional Requirements
@@ -86,17 +93,17 @@ Jack wants to update his job title, add a new role, or modify his skills by edit
 - **FR-003**: The site MUST use the almeida-cv Hugo theme, copied into the repository's `themes/` directory.
 - **FR-004**: The site MUST be responsive and render correctly on viewports from 320px width upward.
 - **FR-005**: The site MUST include a print stylesheet that produces a clean, professional PDF when using the browser's Print to PDF function.
-- **FR-006**: A GitHub Actions workflow MUST build the Hugo site and deploy to GitHub Pages on every push to `main`.
+- **FR-006**: A GitHub Actions workflow MUST build the Hugo site and deploy to GitHub Pages using the artifact-based `actions/deploy-pages` action on every merge to `main`. The `main` branch MUST be protected with branch protection rules that prevent direct pushes; all changes arrive via pull requests.
 - **FR-007**: The site MUST be served at the custom domain `bio.jacktracey.co.uk`.
-- **FR-008**: The content data file MUST include placeholder/initial content for Jack Tracey including: name, current employer (Microsoft), a professional summary, at least one work experience entry, a skills section, and contact details.
+- **FR-008**: The content data file MUST include placeholder/initial content for Jack Tracey including: name, current title (Senior Cloud Solutions Architect), current employer (Microsoft), a professional summary, at least one work experience entry, a skills section, and contact details.
 - **FR-009**: The GitHub Actions workflow MUST fail (and not deploy) if the Hugo build produces errors.
 - **FR-010**: The site MUST include a `CNAME` file in the published output for custom domain configuration.
 
 ### Key Entities
 
-- **Content Profile**: The primary data entity representing Jack Tracey's professional information. Contains: name, title, employer, summary/about, work experience entries (each with role, company, dates, description), skills (grouped by category), education entries, and contact links (LinkedIn, GitHub, email).
+- **Content Profile**: The primary data entity representing Jack Tracey's professional information. Contains: name, title (Senior Cloud Solutions Architect), employer (Microsoft), summary/about, work experience entries (each with role, company, dates, description), skills (grouped by category), education entries, and contact links (LinkedIn, GitHub, email).
 - **Theme**: The almeida-cv Hugo theme providing layout, styling, and responsive design. Referenced by the Hugo configuration and stored in the `themes/` directory.
-- **Deployment Pipeline**: The GitHub Actions workflow that builds the site and deploys it. Triggered on push to `main`, uses Hugo to generate static files, and publishes to the `gh-pages` branch or GitHub Pages environment.
+- **Deployment Pipeline**: The GitHub Actions workflow that builds the site and deploys it. Uses the artifact-based `actions/deploy-pages` action with GitHub Pages source set to "GitHub Actions". Triggered on merge to `main` (via pull requests only; direct pushes are blocked by branch protection). Publishes built static files as a GitHub Pages artifact.
 
 ## Success Criteria *(mandatory)*
 
@@ -122,7 +129,8 @@ Jack wants to update his job title, add a new role, or modify his skills by edit
 
 The following steps cannot be automated and must be performed by the repository owner:
 
-1. **Configure GitHub Pages**: In the repository Settings → Pages, set the source to "GitHub Actions" (or the `gh-pages` branch, depending on the workflow approach).
-2. **Configure Custom Domain DNS**: Create a CNAME record for `bio.jacktracey.co.uk` pointing to `jtracey93.github.io` at the DNS provider.
+1. **Configure GitHub Pages**: In the repository Settings → Pages, set the source to "GitHub Actions".
+2. **Configure Branch Protection**: In the repository Settings → Branches, add a branch protection rule for `main` that requires pull request reviews and prevents direct pushes.
+3. **Configure Custom Domain DNS**: Create a CNAME record for `bio.jacktracey.co.uk` pointing to `jtracey93.github.io` at the DNS provider.
 3. **Set Custom Domain in GitHub**: In the repository Settings → Pages → Custom domain, enter `bio.jacktracey.co.uk` and enable "Enforce HTTPS".
 4. **Verify Domain (recommended)**: In GitHub account settings → Pages → Verified domains, add and verify `jacktracey.co.uk` to prevent others from using the domain with GitHub Pages.
