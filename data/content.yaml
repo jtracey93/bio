@@ -4,13 +4,15 @@ BasicInfo:
   Photo: /img/avatar.jpg
   Contacts:
     - Icon: fas fa-envelope
-      Info: <a href="mailto:jack@jacktracey.co.uk">E-mail Me</a>
+      Info: <a href="mailto:jack@jacktracey.co.uk">me@jacktracey.co.uk</a>
     - Icon: fab fa-linkedin-in
       Info: <a href="https://www.linkedin.com/in/jacktracey93" target="_blank">LinkedIn Profile</a>
     - Icon: fab fa-github
-      Info: <a href="https://github.com/jtracey93" target="_blank">GitHub Profile</a>
+      Info: <a href="https://github.com/jtracey93" target="_blank">GitHub (jtracey93)</a>
     - Icon: fas fa-globe
       Info: <a href="https://jacktracey.co.uk" target="_blank">Blog</a>
+    - Icon: fas fa-globe
+      Info: <a href="https://bio.link/jacktracey" target="_blank">All my links</a>
 
 Profile: Senior Cloud Solution Architect at Microsoft with over 15 years in IT, focused on helping customers migrate, transform, and modernise environments on Azure. Technical lead for Azure Landing Zones, Subscription Vending, and Azure Verified Modules. EMEA Chair and Global Lead of the Solution Engineering Council. Extensive experience working with large-scale, complex environments across multiple industries globally. Passionate about deconstructing complex technologies and explaining them clearly. Former Microsoft MVP (Azure), Microsoft Certified Trainer (MCT), and co-founder of the Sussex Azure User Group. Regular public speaker and community contributor with a blog ranked in the top 50 Azure blogs globally.
 
