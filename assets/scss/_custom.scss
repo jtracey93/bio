@@ -180,12 +180,16 @@
 @media screen {
     .collapsible {
         overflow: hidden;
-        max-height: 200rem;
         transition: max-height 0.35s ease-in-out;
     }
 
+    .collapsible:not(.collapsed) {
+        max-height: none !important;
+        overflow: visible;
+    }
+
     .collapsed {
-        max-height: 0;
+        max-height: 0 !important;
     }
 
     .collapsible-heading {
