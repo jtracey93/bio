@@ -68,8 +68,24 @@
             if (!heading) return;
             var content = heading.nextElementSibling;
             if (!content) return;
-            content.classList.toggle('collapsed');
-            heading.classList.toggle('is-collapsed');
+            if (content.classList.contains('collapsed')) {
+                // Expand: set scrollHeight so transition animates, then remove constraint
+                content.style.maxHeight = content.scrollHeight + 'px';
+                content.classList.remove('collapsed');
+                heading.classList.remove('is-collapsed');
+                content.addEventListener('transitionend', function handler() {
+                    content.style.maxHeight = '';
+                    content.removeEventListener('transitionend', handler);
+                });
+            } else {
+                // Collapse: set current height first so transition has a start value
+                content.style.maxHeight = content.scrollHeight + 'px';
+                requestAnimationFrame(function() {
+                    content.classList.add('collapsed');
+                    heading.classList.add('is-collapsed');
+                    content.style.maxHeight = '';
+                });
+            }
         });
     })();
     </script>
