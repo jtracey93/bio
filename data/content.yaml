@@ -20,7 +20,7 @@ Experience:
   - Employer: Microsoft
     Place: United Kingdom
     Positions:
-      - Title: Senior Cloud Solution Architect – Cloud & AI Platform
+      - Title: Senior Cloud Solution Architect – Cloud & AI Platforms (Global) - Technical Success
         Date: Dec 2021 - Present
         Details:
           - Technical lead for Azure Landing Zones, Subscription Vending, and Azure Verified Modules
@@ -38,7 +38,7 @@ Experience:
           - GitHub Actions
           - PowerShell
           - Sovereign Cloud
-      - Title: Cloud Solution Architect – Customer Architecture & Engineering
+      - Title: Cloud Solution Architect – Cloud & AI Platforms (Global) - Technical Success
         Date: May 2021 - Dec 2021
         Details:
           - Delivered architecture and engineering solutions for enterprise customers
@@ -48,7 +48,7 @@ Experience:
           - Azure
           - Terraform
           - Bicep
-      - Title: Cloud Solution Architect
+      - Title: Cloud Solution Architect - UK Subsidiary
         Date: Apr 2020 - May 2021
         Details:
           - Enterprise-scale architecture for some of Microsoft's largest and most complex customers
@@ -59,16 +59,6 @@ Experience:
           - Azure
           - Terraform
           - ARM Templates
-
-  - Employer: Sussex Azure User Group
-    Place: Brighton, United Kingdom
-    Positions:
-      - Title: Co-Founder
-        Date: Apr 2019 - Present
-        Details:
-          - Co-founded a community for IT professionals in Sussex to collaborate and learn about Microsoft Azure
-          - Audience ranges from Azure beginners to Microsoft MVPs
-          - Focus on knowledge sharing, networking, and community building within the Azure community
 
   - Employer: CDW UK
     Place: London, United Kingdom
@@ -85,6 +75,16 @@ Experience:
           - Azure
           - Architecture
           - Pre-Sales
+
+  - Employer: Sussex Azure User Group
+    Place: Brighton, United Kingdom
+    Positions:
+      - Title: Co-Founder
+        Date: Apr 2019 - Present
+        Details:
+          - Co-founded a community for IT professionals in Sussex to collaborate and learn about Microsoft Azure
+          - Audience ranges from Azure beginners to Microsoft MVPs
+          - Focus on knowledge sharing, networking, and community building within the Azure community
 
   - Employer: Acora
     Place: Burgess Hill, United Kingdom
