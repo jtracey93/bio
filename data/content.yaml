@@ -4,38 +4,156 @@ BasicInfo:
   Photo: /img/avatar.jpg
   Contacts:
     - Icon: fas fa-envelope
-      Info: <a href="mailto:jack@jacktracey.co.uk">E-mail Me</a>
+      Info: <a href="mailto:jack@jacktracey.co.uk">me@jacktracey.co.uk</a>
     - Icon: fab fa-linkedin-in
       Info: <a href="https://www.linkedin.com/in/jacktracey93" target="_blank">LinkedIn Profile</a>
     - Icon: fab fa-github
-      Info: <a href="https://github.com/jtracey93" target="_blank">GitHub Profile</a>
+      Info: <a href="https://github.com/jtracey93" target="_blank">GitHub (jtracey93)</a>
+    - Icon: fas fa-globe
+      Info: <a href="https://jacktracey.co.uk" target="_blank">Blog</a>
+    - Icon: fas fa-globe
+      Info: <a href="https://bio.link/jacktracey" target="_blank">All my links</a>
 
-Profile: Senior Cloud Solutions Architect at Microsoft with extensive experience in Azure cloud architecture, infrastructure as code, and enterprise platform engineering. Passionate about helping organisations adopt cloud-native solutions, automate infrastructure, and build scalable, resilient platforms. Skilled in translating complex technical requirements into practical, maintainable architectures.
+Profile: Senior Cloud Solution Architect at Microsoft with over 15 years in IT, focused on helping customers migrate, transform, and modernise environments on Azure. Technical lead for Azure Landing Zones, Subscription Vending, and Azure Verified Modules. EMEA Chair and Global Lead of the Solution Engineering Council. Extensive experience working with large-scale, complex environments across multiple industries globally. Passionate about deconstructing complex technologies and explaining them clearly. Former Microsoft MVP (Azure), Microsoft Certified Trainer (MCT), and co-founder of the Sussex Azure User Group. Regular public speaker and community contributor with a blog ranked in the top 50 Azure blogs globally.
 
 Experience:
   - Employer: Microsoft
     Place: United Kingdom
     Positions:
-      - Title: Senior Cloud Solutions Architect
-        Date: Jan 2020 - Present
+      - Title: Senior Cloud Solution Architect – Cloud & AI Platforms (Global) - Technical Success
+        Date: Dec 2021 - Present
         Details:
-          - Architect and deliver enterprise-scale Azure landing zones for strategic customers
+          - Technical lead for Azure Landing Zones, Subscription Vending, and Azure Verified Modules
+          - EMEA Chair and Global Lead for the Solution Engineering Council
+          - Direct owner of the Azure/azure-landing-zones GitHub repository
+          - Contributor to Cloud Adoption Framework (CAF) documentation including multi-tenant ALZ and subscription vending guidance
+          - Regular presenter at Azure Landing Zones and Azure Verified Modules external community calls
+          - Speaker on Microsoft Sovereign Cloud strategy and enablement (LevelUp sessions)
+          - Architect and deliver enterprise-scale Azure solutions for strategic customers across multiple industries
           - Lead technical engagements covering infrastructure as code, governance, and platform engineering
-          - Develop and maintain open-source tooling for Azure architecture validation and deployment
-          - Mentor and guide customers through cloud adoption framework methodologies
         Badges:
           - Azure
           - Terraform
           - Bicep
           - GitHub Actions
           - PowerShell
-          - Kubernetes
+          - Sovereign Cloud
+      - Title: Cloud Solution Architect – Cloud & AI Platforms (Global) - Technical Success
+        Date: May 2021 - Dec 2021
+        Details:
+          - Delivered architecture and engineering solutions for enterprise customers
+          - Guided customers through Cloud Adoption Framework methodologies
+          - Worked with some of Microsoft's largest and most complex customer environments
+        Badges:
+          - Azure
+          - Terraform
+          - Bicep
+      - Title: Cloud Solution Architect - UK Subsidiary
+        Date: Apr 2020 - May 2021
+        Details:
+          - Enterprise-scale architecture for some of Microsoft's largest and most complex customers
+          - Azure Landing Zones design and implementation guidance
+          - Infrastructure as code development and customer enablement
+          - Mentoring and guiding customers through cloud adoption framework methodologies
+        Badges:
+          - Azure
+          - Terraform
+          - ARM Templates
 
-Education:
-  - Course: Computer Science
-    Place: University (Placeholder)
-    Date: "2015"
-    Details: Placeholder — update with actual education details
+  - Employer: CDW UK
+    Place: London, United Kingdom
+    Positions:
+      - Title: Solutions Architect – Public Cloud Architecture
+        Date: Oct 2018 - Apr 2020
+        Details:
+          - Pre-sales and post-sales Azure architecture for enterprise customers
+          - Customer workshops, architecture sessions, and technical meetings
+          - HLD/LLD production, RFP/RFI responses, and Azure solution proposals
+          - Azure consumption and professional services estimations
+          - Partner collaboration and Azure-focused solution development
+        Badges:
+          - Azure
+          - Architecture
+          - Pre-Sales
+
+  - Employer: Sussex Azure User Group
+    Place: Brighton, United Kingdom
+    Positions:
+      - Title: Co-Founder
+        Date: Apr 2019 - Present
+        Details:
+          - Co-founded a community for IT professionals in Sussex to collaborate and learn about Microsoft Azure
+          - Audience ranges from Azure beginners to Microsoft MVPs
+          - Focus on knowledge sharing, networking, and community building within the Azure community
+
+  - Employer: Acora
+    Place: Burgess Hill, United Kingdom
+    Positions:
+      - Title: Technical Architect
+        Date: Jun 2018 - Oct 2018
+        Details:
+          - Senior technical role reporting to the Chief Architect and CEO
+          - Pre-sales architecture, estimates, BOMs, HLDs/LLDs, and RFP/RFI responses
+          - Close collaboration with sales, delivery, and operations teams
+        Badges:
+          - Architecture
+          - Pre-Sales
+      - Title: Technical Engineering Lead
+        Date: Jul 2017 - Jun 2018
+        Details:
+          - Line management of 6 Technical Systems Engineers
+          - Ownership of delivery quality, customer satisfaction, and executive reporting
+          - Hands-on design and architecture responsibilities
+          - Resource allocation and training delivery
+        Badges:
+          - Leadership
+          - Architecture
+      - Title: Technical Systems Engineer – Networking & Security
+        Date: Oct 2015 - Jul 2017
+        Details:
+          - Networking and security implementation lead
+          - Azure Virtual Networking, ExpressRoute, Palo Alto NGFW
+          - Hyper-V, SCVMM, NetApp ONTAP, Citrix platforms
+          - Major infrastructure and WAN projects for UK and international customers
+          - Winner of "Dedication to Service" award
+        Badges:
+          - Networking
+          - Security
+          - Azure
+      - Title: Service Desk Analyst – Tier 3
+        Date: Nov 2014 - Oct 2015
+        Details:
+          - 3rd-line support for 3000+ user enterprise environments
+          - Windows Server, Exchange DAGs, AD forests, SQL Server clusters
+          - VMware, NetApp SANs, automation via PowerShell
+        Badges:
+          - Support
+          - Virtualisation
+
+  - Employer: JSPC Computer Services
+    Place: West Sussex, United Kingdom
+    Positions:
+      - Title: IT Technician
+        Date: Dec 2013 - Nov 2014
+        Details:
+          - Supported 150+ schools and businesses with on-site and remote support
+          - Technical lead for large-scale broadband and email migrations
+          - Exchange migrations of up to 1000 mailboxes
+
+  - Employer: IT Genie Limited
+    Place: United Kingdom
+    Positions:
+      - Title: Field Engineer
+        Date: Apr 2013 - Dec 2013
+        Details:
+          - Dedicated on-site engineer for 50-100 customers
+          - Server installations, proactive maintenance, and escalations
+          - SBS migrations (2003/2007/2011)
+      - Title: Senior Helpdesk Engineer
+        Date: Jun 2011 - Apr 2013
+        Details:
+          - Supported 75+ customers across diverse infrastructures
+          - Servers, desktops, cloud systems, networking, and internet services
 
 Skills:
   - Family: Cloud Platforms
@@ -44,6 +162,8 @@ Skills:
       - Azure Landing Zones
       - Azure Policy
       - Azure Resource Manager
+      - Azure Verified Modules
+      - Microsoft Sovereign Cloud
   - Family: Infrastructure as Code
     Items:
       - Terraform
@@ -55,21 +175,48 @@ Skills:
       - Azure DevOps
       - PowerShell
       - Bash
-  - Family: Containers & Orchestration
+  - Family: Networking & Security
     Items:
-      - Kubernetes
-      - Docker
-      - AKS
+      - Azure Networking
+      - ExpressRoute
+      - BGP & VPN
+      - Firewalls (Palo Alto, Juniper)
+      - Routing & Switching
+      - Load Balancing
+  - Family: Architecture & Leadership
+    Items:
+      - Enterprise Architecture
+      - Pre-Sales
+      - Public Speaking
+      - Technical Training
+      - Mentoring
 
 Languages:
   - Name: English
     Level: Native
 
 Diplomas:
-  - "Placeholder — update with actual certifications"
+  - "Microsoft Certified: Azure Solutions Architect Expert"
+  - "Microsoft Certified: Azure Administrator Associate"
+  - "Microsoft Certified: Azure Security Engineer Associate"
+  - "Microsoft Certified: Azure Developer Associate"
+  - "Microsoft Certified: Azure Data Fundamentals"
+  - "HashiCorp Certified: Terraform Associate"
+  - "Microsoft Certified Trainer (MCT)"
+  - "Microsoft MVP – Azure (Former)"
+  - "CCNA Routing & Switching"
+  - "JNCIA-JUNOS"
+  - "JNCIS-SEC"
+  - "Palo Alto ACE"
+  - "FY25 Azure Verified Modules Contributor – Platinum"
+  - "Evangelist – Azure Architecture Center"
 
 Interests:
   - Cloud Architecture
   - Open Source
   - Infrastructure as Code
   - Platform Engineering
+  - Community Building
+  - Public Speaking
+  - Sports
+  - Live Music
