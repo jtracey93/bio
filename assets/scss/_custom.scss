@@ -14,6 +14,58 @@
     .mobileHeader__avatar {
         display: none !important;
     }
+
+    // Fix long job titles overlapping dates in print
+    .experience__header,
+    .experience__subheader {
+        height: auto;
+        flex-wrap: nowrap;
+    }
+
+    .experience__position,
+    .experience__company {
+        width: auto;
+        flex: 1 1 auto;
+        float: none;
+    }
+
+    .experience__date,
+    .experience__place {
+        width: auto;
+        flex: 0 0 auto;
+        float: none;
+        white-space: nowrap;
+        padding-left: 1rem;
+    }
+
+    // Tighten spacing to fit more on A4
+    .experience__job {
+        margin-bottom: 1rem;
+    }
+
+    .experience__item:not(:first-child) {
+        padding-top: 0.8rem;
+    }
+
+    .section {
+        margin-bottom: 0.5rem;
+    }
+
+    // Hide collapsible chevrons in print
+    .collapsible-chevron {
+        display: none !important;
+    }
+
+    // Use auto height so print expands to fit content naturally
+    .content {
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
+    // Ensure collapsed sections are visible in print
+    .collapsed {
+        max-height: none !important;
+    }
 }
 
 .contact {
@@ -96,6 +148,31 @@
     .experience__place {
         width: 100%;
         text-align: left;
+    }
+}
+
+// Fix long job titles overlapping dates on desktop
+@media screen and (min-width: 821px) {
+    .experience__header,
+    .experience__subheader {
+        height: auto;
+        flex-wrap: nowrap;
+    }
+
+    .experience__position,
+    .experience__company {
+        width: auto;
+        flex: 1 1 auto;
+        float: none;
+    }
+
+    .experience__date,
+    .experience__place {
+        width: auto;
+        flex: 0 0 auto;
+        float: none;
+        white-space: nowrap;
+        padding-left: 1rem;
     }
 }
 
