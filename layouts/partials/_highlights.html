@@ -1,0 +1,20 @@
+{{ if .Highlights }}
+<div id="highlights" class="section">
+    <div class="section__heading">
+        <h2 class="section__title">{{ i18n "highlights" }}</h2>
+    </div>
+    <div class="section__content">
+        <div class="highlights">
+            {{ range .Highlights }}
+            <div class="highlights__item">
+                {{ if .Icon }}<i class="{{ .Icon }} highlights__icon"></i>{{ end }}
+                <div class="highlights__text">
+                    <h3 class="highlights__title">{{ .Title }}</h3>
+                    <p class="highlights__description">{{ .Description | safeHTML }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

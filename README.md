@@ -26,14 +26,41 @@ All content lives in a single file: `data/content.yaml`. Edit this file to updat
 
 | Section | Description |
 |---------|-------------|
-| `BasicInfo` | Name, photo path, and contact links (email, LinkedIn, GitHub) |
+| `BasicInfo` | Name, subtitle, photo path, and contact links (see below) |
 | `Profile` | Professional summary paragraph |
+| `Highlights` | Key achievements displayed with icons below the profile (see below) |
 | `Experience` | Work history — employer, location, positions with dates, bullet points, and technology badges |
 | `Education` | Academic history — course, institution, date |
 | `Skills` | Skills grouped by category (e.g. "Cloud Platforms": Azure, Terraform) |
 | `Languages` | Language proficiencies |
 | `Diplomas` | Certifications and qualifications |
 | `Interests` | Personal interests and hobbies |
+
+#### `BasicInfo`
+
+```yaml
+BasicInfo:
+  FirstName: Jack
+  LastName: Tracey
+  SubTitle: "Technical Engineering Leader & Product Evangelist"   # optional
+  Photo: /img/avatar.jpg
+  Contacts:
+    - Icon: fas fa-envelope
+      Info: <a href="mailto:you@example.com">you@example.com</a>
+```
+
+`SubTitle` is rendered as a tagline beneath the name heading. Omit the key to hide it.
+
+#### `Highlights`
+
+```yaml
+Highlights:
+  - Icon: fas fa-landmark        # Font Awesome icon class
+    Title: Short Highlight Title
+    Description: A brief description of the achievement or responsibility
+```
+
+Each item renders as an icon + title + description row. The section appears below the Profile and is expanded by default on both mobile and desktop. Omit the `Highlights` key entirely to hide the section.
 
 Sections left empty or omitted are automatically hidden by the theme.
 
