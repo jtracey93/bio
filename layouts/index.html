@@ -12,9 +12,13 @@
         {{ end }}
             <div class="mobileHeader">
                 <img class="mobileHeader__avatar" src="{{ $data.BasicInfo.Photo }}" alt="{{ $data.BasicInfo.FirstName }} {{ $data.BasicInfo.LastName }}" />
-                <h1 class="mainHeading">{{ $data.BasicInfo.FirstName }} <span>{{ $data.BasicInfo.LastName }}</span></h1>
+                <div class="mobileHeader__text">
+                    <h1 class="mainHeading">{{ $data.BasicInfo.FirstName }} <span>{{ $data.BasicInfo.LastName }}</span></h1>
+                    {{ with $data.BasicInfo.SubTitle }}<p class="subHeading">{{ . }}</p>{{ end }}
+                </div>
             </div>
             {{ partial "_profile.html" $data }}
+            {{ partial "_highlights.html" $data }}
             {{ partial "_experience.html" $data }}
             {{ partial "_education.html" $data }}
             {{ partial "_references.html" $data }}
@@ -50,9 +54,10 @@
                     chevron.className = 'collapsible-chevron';
                     title.appendChild(chevron);
                 }
-                // Mobile: collapsed by default (except profile); Desktop: expanded by default
+                // Mobile: collapsed by default (except profile & highlights); Desktop: expanded by default
                 var isProfile = h.closest('#profile') !== null;
-                if (mq.matches && !isProfile) {
+                var isHighlights = h.closest('#highlights') !== null;
+                if (mq.matches && !isProfile && !isHighlights) {
                     content.classList.add('collapsed');
                     h.classList.add('is-collapsed');
                 } else {

@@ -51,6 +51,12 @@
         margin-bottom: 0.5rem;
     }
 
+    // Allow large experience items to break across pages instead of leaving gaps
+    .experience__item {
+        page-break-inside: auto;
+        break-inside: auto;
+    }
+
     // Hide collapsible chevrons in print
     .collapsible-chevron {
         display: none !important;
@@ -173,6 +179,51 @@
         float: none;
         white-space: nowrap;
         padding-left: 1rem;
+    }
+}
+
+// Subtitle below name
+.subHeading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #666;
+    margin-top: 0.2rem;
+    letter-spacing: 0.05rem;
+}
+
+// Highlights section
+.highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.2rem;
+    }
+
+    &__icon {
+        font-size: 1.6rem;
+        color: #3498db;
+        flex-shrink: 0;
+        margin-top: 0.3rem;
+        width: 2rem;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin: 0;
+        text-transform: none;
+    }
+
+    &__description {
+        font-size: 1.1rem;
+        margin: 0.2rem 0 0;
+        line-height: 1.5;
     }
 }
 

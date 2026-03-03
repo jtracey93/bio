@@ -1,6 +1,7 @@
 BasicInfo:
   FirstName: Jack
   LastName: Tracey
+  SubTitle: "Technical Engineering Leader & Product Evangelist"
   Photo: /img/avatar.jpg
   Contacts:
     - Icon: fas fa-envelope
@@ -13,8 +14,24 @@ BasicInfo:
       Info: <a href="https://jacktracey.co.uk" target="_blank">Blog</a>
     - Icon: fas fa-globe
       Info: <a href="https://bio.link/jacktracey" target="_blank">All my links</a>
+    - Icon: fas fa-map-marker-alt
+      Info: <a href="https://www.google.com/maps/place/Burgess+Hill" target="_blank">Burgess Hill, UK</a>
 
 Profile: Senior Cloud Solution Architect at Microsoft with over 15 years in IT, focused on helping customers migrate, transform, and modernise environments on Azure. Technical lead for Azure Landing Zones, Subscription Vending, and Azure Verified Modules. EMEA Chair and Global Lead of the Solution Engineering Council. Extensive experience working with large-scale, complex environments across multiple industries globally. Passionate about deconstructing complex technologies and explaining them clearly. Former Microsoft MVP (Azure), Microsoft Certified Trainer (MCT), and co-founder of the Sussex Azure User Group. Regular public speaker and community contributor with a blog ranked in the top 50 Azure blogs globally.
+
+Highlights:
+  - Icon: fas fa-landmark
+    Title: Azure Landing Zones Technical Lead
+    Description: Direct owner of the Azure/azure-landing-zones GitHub repository and technical lead for enterprise-scale landing zone strategy
+  - Icon: fas fa-users
+    Title: Engineering Council Leadership
+    Description: EMEA Chair and Global Lead of the Solution Engineering Council at Microsoft
+  - Icon: fas fa-microphone-alt
+    Title: Community & Public Speaking
+    Description: Regular speaker at Azure community calls, LevelUp sessions, and industry events. Blog ranked in top 50 Azure blogs globally
+  - Icon: fas fa-award
+    Title: Industry Recognised
+    Description: Former Microsoft MVP (Azure), MCT, and FY25 Azure Verified Modules Contributor – Platinum
 
 Experience:
   - Employer: Microsoft
