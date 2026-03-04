@@ -1,11 +1,11 @@
 BasicInfo:
   FirstName: Jack
   LastName: Tracey
-  SubTitle: "Technical Engineering Leader & Product Evangelist"
+  SubTitle: "Building Azure Platforms — Engineering, Product, and Community"
   Photo: /img/avatar.jpg
   Contacts:
     - Icon: fas fa-envelope
-      Info: <a href="mailto:jack@jacktracey.co.uk">me@jacktracey.co.uk</a>
+      Info: <a href="mailto:me@jacktracey.co.uk">me@jacktracey.co.uk</a>
     - Icon: fab fa-linkedin-in
       Info: <a href="https://www.linkedin.com/in/jacktracey93" target="_blank">LinkedIn Profile</a>
     - Icon: fab fa-github
@@ -17,21 +17,34 @@ BasicInfo:
     - Icon: fas fa-map-marker-alt
       Info: <a href="https://www.google.com/maps/place/Burgess+Hill" target="_blank">Burgess Hill, UK</a>
 
-Profile: Senior Cloud Solution Architect at Microsoft with over 15 years in IT, focused on helping customers migrate, transform, and modernise environments on Azure. Technical lead for Azure Landing Zones, Subscription Vending, and Azure Verified Modules. EMEA Chair and Global Lead of the Solution Engineering Council. Extensive experience working with large-scale, complex environments across multiple industries globally. Passionate about deconstructing complex technologies and explaining them clearly. Former Microsoft MVP (Azure), Microsoft Certified Trainer (MCT), and co-founder of the Sussex Azure User Group. Regular public speaker and community contributor with a blog ranked in the top 50 Azure blogs globally.
+Profile: |
+  Senior Cloud Solution Architect at Microsoft with over 15 years in IT, uniquely operating across both engineering and product management. Built Azure landing zone (ALZ), Sovereign landing zone (SLZ), Azure Verified Modules (AVM), and Subscription Vending from the ground up — defining product vision, writing code, shaping roadmaps, and driving adoption at scale across the Azure ecosystem.
+
+  Deep expertise in Azure Resource Manager, infrastructure as code (Bicep, Terraform), governance, policy, and the Azure control plane. Proven ability to translate real-world customer pain into platform strategy, prioritise backlogs, coordinate cross-functional delivery, and ship solutions used by thousands of enterprises globally.
+
+  Microsoft Ignite 2025 speaker and regular presenter at Bicep, Azure landing zone, and Sovereign Cloud community calls. Recognised voice in the Azure community through the Ctrl+Alt+Azure podcast and a blog ranked in the top 50 Azure blogs globally.
+
+  Former Microsoft MVP (Azure), Microsoft Certified Trainer (MCT), and co-founder of the Sussex Azure User Group.
 
 Highlights:
   - Icon: fas fa-landmark
-    Title: Azure Landing Zones Technical Lead
-    Description: Direct owner of the Azure/azure-landing-zones GitHub repository and technical lead for enterprise-scale landing zone strategy
-  - Icon: fas fa-users
-    Title: Engineering Council Leadership
-    Description: EMEA Chair and Global Lead of the Solution Engineering Council at Microsoft
+    Title: Azure landing zone - Technical Lead & Product Owner
+    Description: Built ALZ from the ground up — defining product vision, engineering the reference architecture, and driving adoption across thousands of enterprise customers globally
+  - Icon: fas fa-shield-alt
+    Title: Sovereign landing zone - Technical Lead & Product Owner
+    Description: Owner of the Sovereign landing zone (SLZ) — the only available offering in the sovereign public cloud space. Defined the architecture, roadmap, and go-to-market strategy for regulated and sovereign workloads
+  - Icon: fas fa-cubes
+    Title: Azure Verified Modules - Technical Lead & Product Owner
+    Description: Built and scaled Azure Verified Modules (AVM) — standardised, reusable Bicep and Terraform modules shipped through public registries and adopted across the Azure ecosystem. FY25 AVM Contributor – Platinum
+  - Icon: fas fa-ticket-alt
+    Title: Subscription Vending - Technical Lead & Product Owner
+    Description: Designed and built Subscription Vending — enabling enterprises to automate Azure subscription lifecycle management at scale through infrastructure as code and the ARM control plane
   - Icon: fas fa-microphone-alt
     Title: Community & Public Speaking
-    Description: Regular speaker at Azure community calls, LevelUp sessions, and industry events. Blog ranked in top 50 Azure blogs globally
+    Description: Microsoft Ignite 2025 speaker, Ctrl+Alt+Azure podcast guest, and regular presenter at Bicep, Azure landing zone, and Sovereign Cloud community calls. Blog ranked in top 50 Azure blogs globally
   - Icon: fas fa-award
-    Title: Industry Recognised
-    Description: Former Microsoft MVP (Azure), MCT, and FY25 Azure Verified Modules Contributor – Platinum
+    Title: Industry Recognised & Trusted Voice
+    Description: Former Microsoft MVP (Azure) and MCT. Trusted technical authority across the Azure community on platform engineering, IaC, governance, and sovereign cloud
 
 Experience:
   - Employer: Microsoft
@@ -40,14 +53,19 @@ Experience:
       - Title: Senior Cloud Solution Architect – Cloud & AI Platforms (Global) - Technical Success
         Date: Dec 2021 - Present
         Details:
-          - Technical lead for Azure Landing Zones, Subscription Vending, and Azure Verified Modules
-          - EMEA Chair and Global Lead for the Solution Engineering Council
-          - Direct owner of the Azure/azure-landing-zones GitHub repository
+          - Built Azure landing zone (ALZ), Sovereign landing zone (SLZ), Azure Verified Modules (AVM), and Subscription Vending from the ground up — taking each from concept to widely adopted platform used by thousands of enterprises
+          - Simultaneously operate as product owner and lead engineer — defining product vision, writing and reviewing code, shaping roadmaps, prioritising backlogs, and coordinating cross-functional delivery across engineering, PM, and field teams
+          - Owner of the Sovereign landing zone (SLZ) — the only available offering in the sovereign public cloud space — driving architecture, roadmap, and go-to-market strategy
+          - Deep expertise in Azure Resource Manager, Bicep, Terraform, ARM deployments, Azure Policy, and the control plane — shipping production-grade IaC modules and reference architectures
+          - Translate real-world customer pain and field telemetry into platform strategy, product requirements, and engineering priorities
+          - Technical lead for sovereign cloud strategy, confidential computing, and regulated workload architecture across financial services, government, and defence sectors
           - Contributor to Cloud Adoption Framework (CAF) documentation including multi-tenant ALZ and subscription vending guidance
-          - Regular presenter at Azure Landing Zones and Azure Verified Modules external community calls
-          - Speaker on Microsoft Sovereign Cloud strategy and enablement (LevelUp sessions)
-          - Architect and deliver enterprise-scale Azure solutions for strategic customers across multiple industries
-          - Lead technical engagements covering infrastructure as code, governance, and platform engineering
+          - Microsoft Ignite 2025 speaker — delivered Lab 505 on enterprise cloud migration and modernisation with Azure landing zone
+          - South Coast Summit 2025 speaker — presented "Azure landing zone + Subscription Vending + Azure Verified Modules == The Perfect Azure Journey"
+          - Guest on the Ctrl+Alt+Azure podcast and regular presenter at Bicep, Azure landing zone, and Sovereign Cloud external community calls
+          - Speaker on Microsoft Sovereign Cloud strategy and enablement (LevelUp sessions) reaching hundreds of field engineers globally
+          - Architect and deliver enterprise-scale Azure solutions for strategic customers across multiple industries globally
+          - Mentor and enable field engineers, partners, and customers on Azure platform best practices and landing zone adoption
         Badges:
           - Azure
           - Terraform
@@ -55,12 +73,17 @@ Experience:
           - GitHub Actions
           - PowerShell
           - Sovereign Cloud
-      - Title: Cloud Solution Architect – Cloud & AI Platforms (Global) - Technical Success
+      - Title: Cloud Solution Architect – Customer Architecture & Engineering (CAE)
         Date: May 2021 - Dec 2021
         Details:
-          - Delivered architecture and engineering solutions for enterprise customers
-          - Guided customers through Cloud Adoption Framework methodologies
-          - Worked with some of Microsoft's largest and most complex customer environments
+          - Moved into the global Customer Architecture & Engineering (CAE) team, expanding scope from UK to worldwide customer engagements
+          - Led the Enterprise Scale UK V-Team technical strategy and architecture pillar, directly shaping the framework that became Azure landing zone
+          - Authored and reviewed public-facing Azure documentation including sandbox guidance, Azure Policies, and networking critical design areas
+          - Identified repeatable customer patterns and began codifying them into what would become Azure landing zone, Subscription Vending, and the foundations of AVM
+          - Developed infrastructure as code solutions using Terraform and Bicep, establishing engineering practices that scaled across the field
+          - Collaborated directly with product engineering teams to feed customer insights and field telemetry back into Azure platform improvements
+          - Created the Azure Baristas internal and partner-facing hack for Azure landing zone enablement
+          - Delivered architecture and engineering solutions for enterprise customers across complex, multi-region Azure environments
         Badges:
           - Azure
           - Terraform
@@ -68,10 +91,15 @@ Experience:
       - Title: Cloud Solution Architect - UK Subsidiary
         Date: Apr 2020 - May 2021
         Details:
-          - Enterprise-scale architecture for some of Microsoft's largest and most complex customers
-          - Azure Landing Zones design and implementation guidance
-          - Infrastructure as code development and customer enablement
-          - Mentoring and guiding customers through cloud adoption framework methodologies
+          - Cloud Solutions Architect in Microsoft's Customer Success Unit (UK), aligned to media, telecoms, and professional services clients
+          - Acted as trusted advisor for customers on Azure architecture, hosting architecture reviews, workshops, and technical meetings
+          - Enterprise-scale architecture for some of Microsoft's largest and most complex customers in the UK and internationally
+          - Led technical strategy for the Enterprise Scale UK V-Team, contributing to public documentation and networking design areas
+          - Active member of the Azure Networking UK Product Champs, presenting at monthly field technical readiness sessions and working with Global Black Belt (GBB) team
+          - Proctored, authored, and attended internal, partner, and customer-facing hacks (OpenHacks, MicroHacks) including Private Link and Azure Virtual WAN
+          - Fed real-world customer feedback directly to product groups, shaping Azure platform improvements from the field
+          - Infrastructure as code development and customer enablement using Terraform and ARM Templates
+          - Founding member of AzTech (UK Product Champs), leading the technology approach and Azure DevOps build-out
         Badges:
           - Azure
           - Terraform
@@ -83,11 +111,16 @@ Experience:
       - Title: Solutions Architect – Public Cloud Architecture
         Date: Oct 2018 - Apr 2020
         Details:
-          - Pre-sales and post-sales Azure architecture for enterprise customers
-          - Customer workshops, architecture sessions, and technical meetings
-          - HLD/LLD production, RFP/RFI responses, and Azure solution proposals
-          - Azure consumption and professional services estimations
-          - Partner collaboration and Azure-focused solution development
+          - Lead pre-sales and post-sales Azure architecture for enterprise customers, designing IaaS and PaaS solutions for migration and modernisation
+          - Delivered customer workshops, architecture sessions, and technical meetings to drive Azure adoption across diverse industries
+          - Produced high-level and low-level designs (HLD/LLD), RFP/RFI responses, and comprehensive Azure solution proposals
+          - Azure consumption forecasting and professional services estimations for complex multi-workload environments
+          - Drove internal innovation including Infrastructure-as-Code adoption (ARM Templates, Terraform, Azure DevOps), running internal training workshops and presenting to senior management
+          - Designed and implemented Azure Lighthouse across UK, International, and US divisions for use by all technical staff
+          - Assisted in Azure Expert MSP submission, liaising with auditors on compliance criteria and providing evidence
+          - Built a strong Microsoft partner relationship through contacts and reputation within the Azure community
+          - Awarded Microsoft MVP for Azure during this period in recognition of community contributions and technical leadership
+          - Ran webinars and presented at internal and customer-facing events to inspire Azure adoption and improve company-wide Azure knowledge
         Badges:
           - Azure
           - Architecture
@@ -100,8 +133,10 @@ Experience:
         Date: Apr 2019 - Present
         Details:
           - Co-founded a community for IT professionals in Sussex to collaborate and learn about Microsoft Azure
-          - Audience ranges from Azure beginners to Microsoft MVPs
+          - Audience ranges from Azure beginners to Microsoft MVPs, with regular monthly meetups and live podcast recordings
           - Focus on knowledge sharing, networking, and community building within the Azure community
+          - Organised and hosted sessions with guest speakers from Microsoft and the wider Azure ecosystem
+          - Speaker at South Coast Summit and other regional events, championing grassroots community engagement
 
   - Employer: Acora
     Place: Burgess Hill, United Kingdom
@@ -109,30 +144,38 @@ Experience:
       - Title: Technical Architect
         Date: Jun 2018 - Oct 2018
         Details:
-          - Senior technical role reporting to the Chief Architect and CEO
-          - Pre-sales architecture, estimates, BOMs, HLDs/LLDs, and RFP/RFI responses
-          - Close collaboration with sales, delivery, and operations teams
+          - Internal promotion reporting directly to the Chief Architect and CEO
+          - Pre-sales architecture for Azure IaaS/PaaS, on-premises infrastructure, Office 365, and networking solutions
+          - Produced professional services and Azure consumption estimations, HLDs, and collaborated on RFPs for infrastructure transformation and cloud migration opportunities
+          - Responsible for product selection for the Server, Cloud, and Messaging technology stack across the professional services team
+          - Hosted weekly technology stack team meetings fostering collaboration across professional services engineers and service operations analysts
+          - Acted as technical owner for all Server, Cloud, and Messaging products, bridging low-level specialists and clients during migrations and implementations
+          - Evaluated emerging cloud technologies and drove continuous innovation to keep solutions relevant
         Badges:
           - Architecture
           - Pre-Sales
       - Title: Technical Engineering Lead
         Date: Jul 2017 - Jun 2018
         Details:
-          - Line management of 6 Technical Systems Engineers
-          - Ownership of delivery quality, customer satisfaction, and executive reporting
-          - Hands-on design and architecture responsibilities
-          - Resource allocation and training delivery
+          - Internal promotion to a hybrid role — 50% hands-on implementations (mainly Azure IaaS and networking) alongside team leadership
+          - Line management of 5–7 Technical Systems Engineers across all technology stacks, including monthly 1-2-1s, professional development plans, and training
+          - Technical lead for all projects delivered by the team, ensuring quality and on-time delivery
+          - Ownership of delivery quality, customer satisfaction metrics, and executive reporting to CFO and CEO
+          - Implemented new induction process for team members and introduced collaboration processes using Microsoft Teams and Forms
+          - Liaised daily with the executive board, Technical Engineering Manager, and Head of Projects to ensure consistent delivery quality
         Badges:
           - Leadership
           - Architecture
       - Title: Technical Systems Engineer – Networking & Security
         Date: Oct 2015 - Jul 2017
         Details:
-          - Networking and security implementation lead
-          - Azure Virtual Networking, ExpressRoute, Palo Alto NGFW
-          - Hyper-V, SCVMM, NetApp ONTAP, Citrix platforms
-          - Major infrastructure and WAN projects for UK and international customers
-          - Winner of "Dedication to Service" award
+          - Internal promotion; 1 of 2 implementation engineers responsible for networking and security in the professional services team
+          - Designed and deployed Azure Virtual Networking including VNETs, peering, VPN Gateways (BGP-enabled), ExpressRoute, NSGs/ASGs, ILBs/PLBs, and NVA routing with UDRs
+          - Implemented Palo Alto NGFW (physical and virtual in Azure and on-premises), Juniper SRX/EX, Cisco Catalyst/ISR/ASR/Nexus, and Cisco Meraki platforms
+          - Built and managed Hyper-V 2012R2 clusters (5x 6+ node clusters) with SCVMM, Nexus 1000v integration, and NetApp Clustered ONTAP via SMI-S
+          - Delivered major infrastructure and WAN projects across EMEA including MPLS replacements, office/datacenter relocations, and WAN resilience installations
+          - Winner of Acora's "Dedication to Service" award in first year in the role, recognised as a "safe pair of hands" by management
+          - Acted as technical lead for all project types across the professional services team, not limited to networking
         Badges:
           - Networking
           - Security
@@ -140,12 +183,11 @@ Experience:
       - Title: Service Desk Analyst – Tier 3
         Date: Nov 2014 - Oct 2015
         Details:
-          - 3rd-line support for 3000+ user enterprise environments
-          - Windows Server, Exchange DAGs, AD forests, SQL Server clusters
-          - VMware, NetApp SANs, automation via PowerShell
-        Badges:
-          - Support
-          - Virtualisation
+          - 1 of 2 Tier 3 analysts supporting a debt management client with 3000+ users
+          - Managed Windows Server (2000+), Exchange 2010 DAGs and CAS arrays across 2 organisations, and 2 separate AD DS forests with cross-forest transitive trusts
+          - Administered SQL Server failover clusters, Always-On Availability Groups, and log shipping configurations
+          - Supported VMware vSphere 5.0+, Hyper-V with SCVMM, and NetApp FAS/E-Series and Dell EqualLogic SANs
+          - Developed PowerShell automation for repeatable tasks including automated starter/leaver processes and HR reporting across domains
 
   - Employer: JSPC Computer Services
     Place: West Sussex, United Kingdom
@@ -153,9 +195,11 @@ Experience:
       - Title: IT Technician
         Date: Dec 2013 - Nov 2014
         Details:
-          - Supported 150+ schools and businesses with on-site and remote support
-          - Technical lead for large-scale broadband and email migrations
-          - Exchange migrations of up to 1000 mailboxes
+          - Supported 150+ schools and businesses with on-site and remote IT support across West Sussex and surrounding counties
+          - Led large-scale projects during school holidays including wireless installations and entire server infrastructure replacements
+          - Delivered Exchange 2003→2010 and 2010→2013 migrations for customers, managing planning and execution
+          - Migrated 100+ schools' internet connections from council-provided services to JSPC's own internet and web filtering, including domain and email migrations for each school
+          - Managed diverse Windows Server environments including Active Directory, Group Policy, and print services
 
   - Employer: IT Genie Limited
     Place: United Kingdom
@@ -163,20 +207,26 @@ Experience:
       - Title: Field Engineer
         Date: Apr 2013 - Dec 2013
         Details:
-          - Dedicated on-site engineer for 50-100 customers
-          - Server installations, proactive maintenance, and escalations
-          - SBS migrations (2003/2007/2011)
+          - Internal promotion from Senior Helpdesk Engineer to dedicated on-site Field Engineer
+          - Provided on-site support to 50–100 SMB customers as their dedicated engineer for all IT needs
+          - Delivered server installations, proactive maintenance visits, and managed escalations from the helpdesk team
+          - Completed several Small Business Server swing migrations (SBS 2003/2008/2011) for various clients
+          - Built strong customer relationships, acting as the trusted technical point of contact for each account
       - Title: Senior Helpdesk Engineer
         Date: Jun 2011 - Apr 2013
         Details:
-          - Supported 75+ customers across diverse infrastructures
-          - Servers, desktops, cloud systems, networking, and internet services
+          - Provided day-to-day support to 75+ customers, each with their own specific infrastructure critical to their business
+          - Supported servers, desktops, laptops, mobile devices, cloud-based systems, web hosting, networking, and internet services
+          - First point of escalation for complex technical issues, mentoring junior helpdesk engineers
+          - Managed Windows Server environments, Exchange, backup solutions, and internet connectivity services
+          - Started IT career at 17, rapidly progressing from entry-level to senior engineer within two years
 
 Skills:
   - Family: Cloud Platforms
     Items:
       - Azure
-      - Azure Landing Zones
+      - Azure landing zone
+      - Sovereign landing zone
       - Azure Policy
       - Azure Resource Manager
       - Azure Verified Modules
