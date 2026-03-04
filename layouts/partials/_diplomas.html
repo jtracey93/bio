@@ -1,0 +1,24 @@
+{{ if .Diplomas }}
+<div class="sideSection">
+    <div class="sideSection__heading">
+        <h2 class="sideSection__title">{{ i18n "diplomas" }}</h2>
+    </div>
+    <div class="sideSection__content">
+        {{ with .DiplomaLinks }}
+        <div class="diploma-links">
+            <h3 class="diploma-links__heading">Transcripts</h3>
+            {{ range . }}
+            <a href="{{ .URL }}" target="_blank" rel="noopener noreferrer" title="{{ .Title }}">
+                <i class="{{ .Icon }}"></i> {{ .Title }}
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
+        <ul class="diploma-list">
+            {{ range .Diplomas }}
+            <li>{{ . | safeHTML }}</li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+{{ end }}

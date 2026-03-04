@@ -214,12 +214,18 @@ Languages:
 
 Diplomas:
   - "Microsoft Certified: Azure Solutions Architect Expert"
+  - "Microsoft Certified: Cybersecurity Architect Expert"
   - "Microsoft Certified: Azure Administrator Associate"
   - "Microsoft Certified: Azure Security Engineer Associate"
   - "Microsoft Certified: Azure Developer Associate"
+  - "Microsoft Certified: Azure Network Engineer Associate"
+  - "Microsoft Certified: Identity and Access Administrator Associate"
+  - "Microsoft Certified: Azure Virtual Desktop Specialty"
+  - "Microsoft Certified: Security Operations Analyst Associate"
+  - "Microsoft Certified: Azure AI Fundamentals"
   - "Microsoft Certified: Azure Data Fundamentals"
+  - "Microsoft Certified: Security, Compliance, and Identity Fundamentals"
   - "HashiCorp Certified: Terraform Associate"
-  - "Microsoft Certified Trainer (MCT)"
   - "Microsoft MVP – Azure (Former)"
   - "CCNA Routing & Switching"
   - "JNCIA-JUNOS"
@@ -227,6 +233,14 @@ Diplomas:
   - "Palo Alto ACE"
   - "FY25 Azure Verified Modules Contributor – Platinum"
   - "Evangelist – Azure Architecture Center"
+
+DiplomaLinks:
+  - Icon: fas fa-certificate
+    Title: Microsoft Transcript
+    URL: https://learn.microsoft.com/en-gb/users/jtracey93mcp/transcript/d49w3ik2qkgpmwj?source=docs&tab=credentials-tab
+  - Icon: fab fa-superpowers
+    Title: Credly Profile
+    URL: https://www.credly.com/users/jtracey93
 
 Interests:
   - Cloud Architecture
