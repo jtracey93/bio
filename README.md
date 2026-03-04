@@ -64,6 +64,39 @@ Each item renders as an icon + title + description row. The section appears belo
 
 Sections left empty or omitted are automatically hidden by the theme.
 
+### Icons
+
+The site uses **Font Awesome 5.15.3 Free** (loaded via CDN). Icons are used in two places:
+
+| Location | YAML key | Example |
+|----------|----------|---------|
+| Contact links (right-hand sidebar) | `BasicInfo.Contacts[].Icon` | `fab fa-github` |
+| Highlights section | `Highlights[].Icon` | `fas fa-landmark` |
+
+Each `Icon` value is a full Font Awesome class string with two parts: the **style prefix** and the **icon name**.
+
+#### Available style prefixes
+
+| Prefix | Style | Example |
+|--------|-------|---------|
+| `fas`  | Solid | `fas fa-envelope` |
+| `far`  | Regular (outline) | `far fa-envelope` |
+| `fab`  | Brands | `fab fa-linkedin-in` |
+
+#### Searching for icons
+
+Browse and search the full icon gallery at:
+
+- **[fontawesome.com/v5/search?m=free](https://fontawesome.com/v5/search?m=free)** — filtered to free icons only
+
+On the search page, click an icon to see its class name. Copy the style prefix + name into the `Icon` field. For example, the search result page for the "users" icon shows `<i class="fas fa-users"></i>`, so you would set:
+
+```yaml
+Icon: fas fa-users
+```
+
+> **Tip:** Brand icons (social media logos, company marks) always use the `fab` prefix. General-purpose icons typically use `fas` (solid) or `far` (regular/outline).
+
 ### Updating the Avatar
 
 Replace `static/img/avatar.jpg` with your photo. The image is referenced by `BasicInfo.Photo` in `content.yaml`.
