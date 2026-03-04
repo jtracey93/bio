@@ -227,6 +227,33 @@
     }
 }
 
+// GitHub footer link — screen only
+.site-footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+
+    a {
+        color: #888;
+        text-decoration: none;
+        transition: color 0.2s;
+
+        &:hover {
+            color: #333;
+        }
+
+        i {
+            margin-right: 0.3rem;
+        }
+    }
+}
+
+@media print {
+    .site-footer {
+        display: none !important;
+    }
+}
+
 // Collapsible sections — all screen sizes
 @media screen {
     .collapsible {
