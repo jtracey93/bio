@@ -22,28 +22,30 @@ Profile: |
 
   Deep expertise in Azure Resource Manager (ARM), the Azure control plane, Infrastructure-as-Code (Bicep, Terraform), Azure Policy, governance, and deployment reliability. Proven track record of translating real-world customer pain and field telemetry into platform strategy, product requirements, and engineering priorities. Ships production-grade platform products spanning reference architectures, governance frameworks, policy definitions, IaC modules, and deployment tooling through open-source repositories and public registries, coordinating cross-functional and cross-organisation delivery across engineering, product management, and field teams at Azure-wide scale.
 
-  Microsoft Ignite and Build speaker. Former Microsoft MVP (Azure) and Microsoft Certified Trainer (MCT). Co-founder of the Sussex Azure User Group, part of the [Silicon Brighton](https://siliconbrighton.com/) network. Regular presenter at Bicep, Azure landing zone, Azure Verified Modules, and Sovereign Cloud public community calls, and guest on [Ctrl + Alt + Azure](https://ctrlaltazure.com/people/jack-tracey). Recognised technical authority and thought leader in the Azure platform engineering, landing zones, IaC, governance, and sovereign cloud across the Azure community, with a blog, previously, ranked in the top 50 Azure blogs globally.
+  Microsoft Ignite and Build speaker. Former Microsoft MVP (Azure) and Microsoft Certified Trainer (MCT). Co-founder of the Sussex Azure User Group, part of the [Silicon Brighton](https://siliconbrighton.com/) network. Regular presenter at Bicep, Azure landing zone, and Azure Verified Modules public community calls, and guest on [Ctrl + Alt + Azure](https://ctrlaltazure.com/people/jack-tracey). Recognised technical authority and thought leader in the Azure platform engineering, landing zones, IaC, governance, and sovereign cloud across the Azure community, with a blog, previously, ranked in the top 50 Azure blogs globally.
+
+  Before joining Microsoft, Jack was a Solutions Architect at CDW UK, leading pre- and post-sales Azure, AWS, and GCP architecture for enterprise customers. He started his IT career at 17, progressing through IT Genie Limited, JSPC Computer Services, and Acora — where he rose from Technical Systems Engineer to Technical Engineering Lead and Technical Architect, focussing on Microsoft Cloud (M365 and Azure). Deep background in networking, on-premises data centre builds, and the Microsoft technology ecosystem throughout.
 
 
 Highlights:
   - Icon: fas fa-landmark
-    Title: Azure landing zone - Technical Lead & Product Owner
-    Description: Built ALZ from the ground up — defining product vision, engineering the reference architecture, and driving adoption across thousands of enterprise customers globally
+    Title: Azure landing zone (ALZ) - Technical Lead & Product Owner
+    Description: Matured ALZ to product it is today from initial internal project "North Star/ESLZ". Defining product vision, engineering the reference architecture, and driving adoption across thousands of enterprise customers globally grounded on real-world customer pain and field telemetry. ALZ is the most widely adopted Azure landing zone, with tens of thousands of customers using it as the platform landing zone foundation of their Azure environments globally.
   - Icon: fas fa-shield-alt
-    Title: Sovereign landing zone - Technical Lead & Product Owner
-    Description: Owner of the Sovereign landing zone (SLZ) — the only available offering in the sovereign public cloud space. Defined the architecture, roadmap, and go-to-market strategy for regulated and sovereign workloads
+    Title: Sovereign landing zone (SLZ) - Technical Lead & Product Owner
+    Description: Owner of the Sovereign landing zone (SLZ). The only available offering in the Microsoft Sovereign public cloud space (as of March 2026). Defined the architecture, tooling, guidance, roadmap, and go-to-market strategy built as a variant on top of ALZ for regulated and sovereign workloads
   - Icon: fas fa-cubes
-    Title: Azure Verified Modules - Technical Lead & Product Owner
-    Description: Built and scaled Azure Verified Modules (AVM) — standardised, reusable Bicep and Terraform modules shipped through public registries and adopted across the Azure ecosystem. FY25 AVM Contributor – Platinum
+    Title: Azure Verified Modules (AVM) - Technical Lead & Product Owner
+    Description: Built and scaled Azure Verified Modules (AVM) product. Standardised, reusable, Microsoft official Bicep and Terraform modules shipped through public registries and adopted across Azure consumers globally. Over 30+ million deployments to date and growing month on month. Defined the product vision, module design, engineering standards, and delivery processes for AVM across multiple engineering teams and product areas within Azure.
   - Icon: fas fa-ticket-alt
     Title: Subscription Vending - Technical Lead & Product Owner
-    Description: Designed and built Subscription Vending — enabling enterprises to automate Azure subscription lifecycle management at scale through infrastructure as code and the ARM control plane
+    Description: Designed and built Subscription Vending — enabling enterprises to automate Azure subscription lifecycle management at scale through Infrastrcuture-as-Code (IaC) and the ARM control plane. Drove the product from concept to delivery, defining the architecture, engineering the solution, and driving adoption across the field. Subscription Vending is now a critical part of customer platform landing zone journey in the path to democratizing Azure subscription across their organisations.
   - Icon: fas fa-microphone-alt
     Title: Community & Public Speaking
-    Description: Microsoft Ignite 2025 speaker, Ctrl+Alt+Azure podcast guest, and regular presenter at Bicep, Azure landing zone, and Sovereign Cloud community calls. Blog ranked in top 50 Azure blogs globally
+    Description: Microsoft Ignite & Build conference speaker, Ctrl+Alt+Azure podcast guest, and regular presenter at Bicep, Azure landing zone, and Sovereign Cloud community calls. Regular social media (LinkedIn) and YouTube videos posted about products such as ALZ and AVM. Blog previously ranked in top 50 Azure blogs globally.
   - Icon: fas fa-award
     Title: Industry Recognised & Trusted Voice
-    Description: Former Microsoft MVP (Azure) and MCT. Trusted technical authority across the Azure community on platform engineering, IaC, governance, and sovereign cloud
+    Description: Former Microsoft MVP in the Azure category for 2 years before joining Microsoft and handing back MVP status. Trusted technical authority across the Azure community on platform engineering, landing zones, IaC, governance, and sovereign cloud through community outreach efforts and product evangelism.
 
 Experience:
   - Employer: Microsoft
@@ -58,10 +60,11 @@ Experience:
           - Deep expertise in Azure Resource Manager, Bicep, Terraform, ARM deployments, Azure Policy, and the control plane — shipping production-grade IaC modules and reference architectures
           - Translate real-world customer pain and field telemetry into platform strategy, product requirements, and engineering priorities
           - Technical lead for sovereign cloud strategy, confidential computing, and regulated workload architecture across financial services, government, and defence sectors
-          - Contributor to Cloud Adoption Framework (CAF) documentation including multi-tenant ALZ and subscription vending guidance
-          - Microsoft Ignite 2025 speaker — delivered Lab 505 on enterprise cloud migration and modernisation with Azure landing zone
+          - Contributor to Cloud Adoption Framework (CAF) & Well-Architected Framework (WAF) documentation for ALZ, AVM, Subscription Vending, and other platform engineering topics
+          - Microsoft Ignite 2025 speaker — delivered Labs and theatre sessions on enterprise cloud migration and modernisation with Azure landing zone and Azure Verified Modules
           - South Coast Summit 2025 speaker — presented "Azure landing zone + Subscription Vending + Azure Verified Modules == The Perfect Azure Journey"
-          - Guest on the Ctrl+Alt+Azure podcast and regular presenter at Bicep, Azure landing zone, and Sovereign Cloud external community calls
+          - Guest on the Ctrl+Alt+Azure podcast
+          - Regular presenter at Bicep, Azure landing zone, Azure Vereifed Modules and Sovereign Cloud external community calls & YouTube videos
           - Speaker on Microsoft Sovereign Cloud strategy and enablement (LevelUp sessions) reaching hundreds of field engineers globally
           - Architect and deliver enterprise-scale Azure solutions for strategic customers across multiple industries globally
           - Mentor and enable field engineers, partners, and customers on Azure platform best practices and landing zone adoption
@@ -69,17 +72,19 @@ Experience:
           - Azure
           - Terraform
           - Bicep
-          - GitHub Actions
+          - GitHub
+          - Azure DevOps
           - PowerShell
-          - Sovereign Cloud
+          - Bash
+          - Sovereignty
       - Title: Cloud Solution Architect – Customer Architecture & Engineering (CAE)
         Date: May 2021 - Dec 2021
         Details:
           - Moved into the global Customer Architecture & Engineering (CAE) team, expanding scope from UK to worldwide customer engagements
-          - Led the Enterprise Scale UK V-Team technical strategy and architecture pillar, directly shaping the framework that became Azure landing zone
-          - Authored and reviewed public-facing Azure documentation including sandbox guidance, Azure Policies, and networking critical design areas
+          - Led the Enterprise Scale v-team in technical strategy and architecture pillar, directly shaping the framework that became the Azure landing zone product
+          - Authored and reviewed public-facing Azure documentation on ALZ including sandbox guidance, Azure Policies, and networking critical design areas
           - Identified repeatable customer patterns and began codifying them into what would become Azure landing zone, Subscription Vending, and the foundations of AVM
-          - Developed infrastructure as code solutions using Terraform and Bicep, establishing engineering practices that scaled across the field
+          - Developed Infrastrcuture-as-Code (IaC) solutions using Terraform and Bicep, establishing engineering practices that scaled across the field
           - Collaborated directly with product engineering teams to feed customer insights and field telemetry back into Azure platform improvements
           - Created the Azure Baristas internal and partner-facing hack for Azure landing zone enablement
           - Delivered architecture and engineering solutions for enterprise customers across complex, multi-region Azure environments
@@ -87,6 +92,10 @@ Experience:
           - Azure
           - Terraform
           - Bicep
+          - GitHub
+          - Azure DevOps
+          - PowerShell
+          - Bash
       - Title: Cloud Solution Architect - UK Subsidiary
         Date: Apr 2020 - May 2021
         Details:
@@ -97,13 +106,16 @@ Experience:
           - Active member of the Azure Networking UK Product Champs, presenting at monthly field technical readiness sessions and working with Global Black Belt (GBB) team
           - Proctored, authored, and attended internal, partner, and customer-facing hacks (OpenHacks, MicroHacks) including Private Link and Azure Virtual WAN
           - Fed real-world customer feedback directly to product groups, shaping Azure platform improvements from the field
-          - Infrastructure as code development and customer enablement using Terraform and ARM Templates
+          - Infrastrcuture-as-Code (IaC) development and customer enablement using Terraform and ARM Templates
           - Founding member of AzTech (UK Product Champs), leading the technology approach and Azure DevOps build-out
         Badges:
           - Azure
           - Terraform
-          - ARM Templates
-
+          - Bicep
+          - GitHub
+          - Azure DevOps
+          - PowerShell
+          - Bash
   - Employer: CDW UK
     Place: London, United Kingdom
     Positions:
@@ -227,14 +239,14 @@ Skills:
       - Azure landing zone
       - Sovereign landing zone
       - Azure Policy
-      - Azure Resource Manager
+      - Azure Resource Manager (ARM)
       - Azure Verified Modules
       - Microsoft Sovereign Cloud
-  - Family: Infrastructure as Code
+  - Family: Infrastrcuture-as-Code (IaC)
     Items:
       - Terraform
       - Bicep
-      - ARM Templates
+      - ARM
   - Family: DevOps & Automation
     Items:
       - GitHub Actions
@@ -244,11 +256,9 @@ Skills:
   - Family: Networking & Security
     Items:
       - Azure Networking
-      - ExpressRoute
-      - BGP & VPN
       - Firewalls (Palo Alto, Juniper)
-      - Routing & Switching
-      - Load Balancing
+      - Routing & Switching (Cisco, Juniper)
+      - Load Balancing (F5, Citrix NetScaler)
   - Family: Architecture & Leadership
     Items:
       - Enterprise Architecture
@@ -260,6 +270,8 @@ Skills:
 Languages:
   - Name: English
     Level: Native
+  - Name: Spanish
+    Level: Learning
 
 Diplomas:
   - "Microsoft Certified: Azure Solutions Architect Expert"
@@ -275,13 +287,12 @@ Diplomas:
   - "Microsoft Certified: Azure Data Fundamentals"
   - "Microsoft Certified: Security, Compliance, and Identity Fundamentals"
   - "HashiCorp Certified: Terraform Associate"
-  - "Microsoft MVP – Azure (Former)"
-  - "CCNA Routing & Switching"
-  - "JNCIA-JUNOS"
-  - "JNCIS-SEC"
-  - "Palo Alto ACE"
-  - "FY25 Azure Verified Modules Contributor – Platinum"
-  - "Evangelist – Azure Architecture Center"
+  - "Microsoft MVP Azure (2 Years - now Alumni as Microsoft FTE)"
+  - "CCNA Routing & Switching | Cisco Certified Network Associate Routing and Switching"
+  - "JNCIA-JUNOS | Juniper Networks Certified Internet Associate"
+  - "JNCIS-SEC | Juniper Networks Certified Specialist Security"
+  - "Palo Alto ACE | Palo Alto Accredited Configuration Engineer"
+  - "See other badges and awards in Microsoft & Credly transcripts, in links above"
 
 DiplomaLinks:
   - Icon: fas fa-certificate
@@ -292,11 +303,13 @@ DiplomaLinks:
     URL: https://www.credly.com/users/jtracey93
 
 Interests:
-  - Cloud Architecture
-  - Open Source
-  - Infrastructure as Code
-  - Platform Engineering
-  - Community Building
   - Public Speaking
-  - Sports
-  - Live Music
+  - Hyperscale Public Clouds
+  - Platform Engineering
+  - Sovereignty
+  - Coffee
+  - Cricket
+  - Football
+  - Golf
+  - Formula 1 (F1) - McLaren fan
+  - Music & Live Concerts/Gigs
