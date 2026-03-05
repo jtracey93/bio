@@ -21,3 +21,8 @@ disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap"]
   swapColumns = false
   footerNote = " "
   enableMetaTags = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -20,9 +20,15 @@ BasicInfo:
 Profile: |
   Senior Cloud Solution Architect at Microsoft with over 15 years in IT, operating at the intersection of platform engineering and product management. Founded, built, and scaled four Azure-wide platform products from concept to enterprise-scale adoption: [Azure landing zone (ALZ)](https://aka.ms/alz), [Sovereign landing zone (SLZ)](https://aka.ms/sovereign/slz), [Azure Verified Modules (AVM)](https://aka.ms/avm), and [Subscription Vending](https://aka.ms/sub-vending). Defined the product vision, wrote and reviewed code, shaped roadmaps, prioritised backlogs, and drove cross-functional delivery for each; resulting in platforms used by thousands of organisations globally in production.
 
+  <br>
+
   Deep expertise in Azure Resource Manager (ARM), the Azure control plane, Infrastructure-as-Code (Bicep, Terraform), Azure Policy, governance, and deployment reliability. Proven track record of translating real-world customer pain and field telemetry into platform strategy, product requirements, and engineering priorities. Ships production-grade platform products spanning reference architectures, governance frameworks, policy definitions, IaC modules, and deployment tooling through open-source repositories and public registries, coordinating cross-functional and cross-organisation delivery across engineering, product management, and field teams at Azure-wide scale.
 
+  <br>
+
   Microsoft Ignite and Build speaker. Former Microsoft MVP (Azure) and Microsoft Certified Trainer (MCT). Co-founder of the Sussex Azure User Group, part of the [Silicon Brighton](https://siliconbrighton.com/) network. Regular presenter at Bicep, Azure landing zone, and Azure Verified Modules public community calls, and guest on [Ctrl + Alt + Azure](https://ctrlaltazure.com/people/jack-tracey). Recognised technical authority and thought leader in the Azure platform engineering, landing zones, IaC, governance, and sovereign cloud across the Azure community, with a blog, previously, ranked in the top 50 Azure blogs globally.
+
+  <br>
 
   Before joining Microsoft, Jack was a Solutions Architect at CDW UK, leading pre- and post-sales Azure, AWS, and GCP architecture for enterprise customers. He started his IT career at 17, progressing through IT Genie Limited, JSPC Computer Services, and Acora — where he rose from Technical Systems Engineer to Technical Engineering Lead and Technical Architect, focussing on Microsoft Cloud (M365 and Azure). Deep background in networking, on-premises data centre builds, and the Microsoft technology ecosystem throughout.
 
