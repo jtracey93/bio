@@ -1,6 +1,6 @@
 baseURL = "https://bio.jacktracey.co.uk/"
 languageCode = "en"
-title = "Jack Tracey - Senior Cloud Solutions Architect"
+title = "Jack Tracey | Building Azure Platforms - Engineering, Product, and Community @ Microsoft"
 theme = "almeida-cv"
 disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap"]
 
@@ -21,3 +21,10 @@ disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap"]
   swapColumns = false
   footerNote = " "
   enableMetaTags = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      # Allow raw HTML (e.g. <br>, <a>) in profile YAML processed by markdownify.
+      # Content is fully owner-authored; no user-generated input is rendered.
+      unsafe = true
