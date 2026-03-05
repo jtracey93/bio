@@ -140,6 +140,10 @@ Experience:
           - Ran webinars and presented at internal and customer-facing events to inspire Azure adoption and improve company-wide Azure knowledge
         Badges:
           - Azure
+          - Terraform
+          - ARM Templates
+          - Azure DevOps
+          - PowerShell
           - Architecture
           - Pre-Sales
 
@@ -154,6 +158,9 @@ Experience:
           - Focus on knowledge sharing, networking, and community building within the Azure community
           - Organised and hosted sessions with guest speakers from Microsoft and the wider Azure ecosystem
           - Speaker at South Coast Summit and other regional events, championing grassroots community engagement
+        Badges:
+          - Azure
+          - Community
 
   - Employer: Acora
     Place: Burgess Hill, United Kingdom
@@ -169,6 +176,10 @@ Experience:
           - Acted as technical owner for all Server, Cloud, and Messaging products, bridging low-level specialists and clients during migrations and implementations
           - Evaluated emerging cloud technologies and drove continuous innovation to keep solutions relevant
         Badges:
+          - Azure
+          - Office 365
+          - Networking
+          - PowerShell
           - Architecture
           - Pre-Sales
       - Title: Technical Engineering Lead
@@ -181,6 +192,8 @@ Experience:
           - Implemented new induction process for team members and introduced collaboration processes using Microsoft Teams and Forms
           - Liaised daily with the executive board, Technical Engineering Manager, and Head of Projects to ensure consistent delivery quality
         Badges:
+          - Azure
+          - Networking
           - Leadership
           - Architecture
       - Title: Technical Systems Engineer – Networking & Security
@@ -205,6 +218,11 @@ Experience:
           - Administered SQL Server failover clusters, Always-On Availability Groups, and log shipping configurations
           - Supported VMware vSphere 5.0+, Hyper-V with SCVMM, and NetApp FAS/E-Series and Dell EqualLogic SANs
           - Developed PowerShell automation for repeatable tasks including automated starter/leaver processes and HR reporting across domains
+        Badges:
+          - Windows Server
+          - PowerShell
+          - Virtualisation
+          - Networking
 
   - Employer: JSPC Computer Services
     Place: West Sussex, United Kingdom
@@ -217,6 +235,10 @@ Experience:
           - Delivered Exchange 2003→2010 and 2010→2013 migrations for customers, managing planning and execution
           - Migrated 100+ schools' internet connections from council-provided services to JSPC's own internet and web filtering, including domain and email migrations for each school
           - Managed diverse Windows Server environments including Active Directory, Group Policy, and print services
+        Badges:
+          - Windows Server
+          - Networking
+          - Exchange
 
   - Employer: IT Genie Limited
     Place: United Kingdom
@@ -229,6 +251,9 @@ Experience:
           - Delivered server installations, proactive maintenance visits, and managed escalations from the helpdesk team
           - Completed several Small Business Server swing migrations (SBS 2003/2008/2011) for various clients
           - Built strong customer relationships, acting as the trusted technical point of contact for each account
+        Badges:
+          - Windows Server
+          - Networking
       - Title: Senior Helpdesk Engineer
         Date: Jun 2011 - Apr 2013
         Details:
@@ -237,6 +262,9 @@ Experience:
           - First point of escalation for complex technical issues, mentoring junior helpdesk engineers
           - Managed Windows Server environments, Exchange, backup solutions, and internet connectivity services
           - Started IT career at 17, rapidly progressing from entry-level to senior engineer within two years
+        Badges:
+          - Windows Server
+          - Networking
 
 Skills:
   - Family: Cloud Platforms
