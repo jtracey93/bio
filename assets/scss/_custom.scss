@@ -275,7 +275,8 @@
 
 @media print {
     .diploma-links {
-        display: none !important;
+        display: flex !important;
+        border-color: #999;
     }
 }
 
