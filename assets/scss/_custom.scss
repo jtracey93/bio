@@ -83,6 +83,13 @@
         page-break-inside: auto !important;
         break-inside: auto !important;
     }
+
+    // Keep section headings together with following content to avoid orphaned headings
+    .sideSection__heading,
+    .section__heading {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+    }
 }
 
 .contact {
