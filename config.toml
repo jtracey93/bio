@@ -1,6 +1,6 @@
 baseURL = "https://bio.jacktracey.co.uk/"
 languageCode = "en"
-title = "Jack Tracey - Senior Cloud Solutions Architect"
+title = "Jack Tracey | Building Azure Platforms - Engineering, Product, and Community @ Microsoft"
 theme = "almeida-cv"
 disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap"]
 
