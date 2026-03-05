@@ -26,7 +26,7 @@ Profile: |
 
   <br>
 
-  Microsoft Ignite and Build speaker. Former Microsoft MVP (Azure) and Microsoft Certified Trainer (MCT). Co-founder of the Sussex Azure User Group, part of the [Silicon Brighton](https://siliconbrighton.com/) network. Regular presenter at Bicep, Azure landing zone, and Azure Verified Modules public community calls, and guest on [Ctrl + Alt + Azure](https://ctrlaltazure.com/people/jack-tracey). Recognised technical authority and thought leader in the Azure platform engineering, landing zones, IaC, governance, and sovereign cloud across the Azure community, with a blog, previously, ranked in the top 50 Azure blogs globally.
+  Microsoft Ignite and Build speaker. Former Microsoft MVP (Azure) and Microsoft Certified Trainer (MCT). Co-founder of the Sussex Azure User Group, part of the [Silicon Brighton](https://siliconbrighton.com/) network. Regular presenter at Bicep, Azure landing zone, and Azure Verified Modules public community calls, and guest on [Ctrl + Alt + Azure](https://ctrlaltazure.com/people/jack-tracey). Recognised technical authority and thought leader in Azure platform engineering, landing zones, IaC, governance, and sovereign cloud across the Azure community, with a blog previously ranked in the top 50 Azure blogs globally.
 
   <br>
 
@@ -36,16 +36,16 @@ Profile: |
 Highlights:
   - Icon: fas fa-landmark
     Title: Azure landing zone (ALZ) - Technical Lead & Product Owner
-    Description: Matured ALZ to product it is today from initial internal project "North Star/ESLZ". Defining product vision, engineering the reference architecture, and driving adoption across thousands of enterprise customers globally grounded on real-world customer pain and field telemetry. ALZ is the most widely adopted Azure landing zone, with tens of thousands of customers using it as the platform landing zone foundation of their Azure environments globally.
+    Description: Matured ALZ to the product it is today from initial internal project "North Star/ESLZ". Defining product vision, engineering the reference architecture, and driving adoption across thousands of enterprise customers globally grounded on real-world customer pain and field telemetry. ALZ is the most widely adopted Azure landing zone, with tens of thousands of customers using it as the platform landing zone foundation of their Azure environments globally.
   - Icon: fas fa-shield-alt
     Title: Sovereign landing zone (SLZ) - Technical Lead & Product Owner
     Description: Owner of the Sovereign landing zone (SLZ). The only available offering in the Microsoft Sovereign public cloud space (as of March 2026). Defined the architecture, tooling, guidance, roadmap, and go-to-market strategy built as a variant on top of ALZ for regulated and sovereign workloads
   - Icon: fas fa-cubes
     Title: Azure Verified Modules (AVM) - Technical Lead & Product Owner
-    Description: Built and scaled Azure Verified Modules (AVM) product. Standardised, reusable, Microsoft official Bicep and Terraform modules shipped through public registries and adopted across Azure consumers globally. Over 30+ million deployments to date and growing month on month. Defined the product vision, module design, engineering standards, and delivery processes for AVM across multiple engineering teams and product areas within Azure.
+    Description: Built and scaled Azure Verified Modules (AVM) product. Standardised, reusable, Microsoft official Bicep and Terraform modules shipped through public registries and adopted across Azure consumers globally. Over 30 million deployments to date and growing month on month. Defined the product vision, module design, engineering standards, and delivery processes for AVM across multiple engineering teams and product areas within Azure.
   - Icon: fas fa-ticket-alt
     Title: Subscription Vending - Technical Lead & Product Owner
-    Description: Designed and built Subscription Vending — enabling enterprises to automate Azure subscription lifecycle management at scale through Infrastrcuture-as-Code (IaC) and the ARM control plane. Drove the product from concept to delivery, defining the architecture, engineering the solution, and driving adoption across the field. Subscription Vending is now a critical part of customer platform landing zone journey in the path to democratizing Azure subscription across their organisations.
+    Description: Designed and built Subscription Vending — enabling enterprises to automate Azure subscription lifecycle management at scale through Infrastructure-as-Code (IaC) and the ARM control plane. Drove the product from concept to delivery, defining the architecture, engineering the solution, and driving adoption across the field. Subscription Vending is now a critical part of the customer platform landing zone journey in the path to democratizing Azure subscriptions across their organisations.
   - Icon: fas fa-microphone-alt
     Title: Community & Public Speaking
     Description: Microsoft Ignite & Build conference speaker, Ctrl+Alt+Azure podcast guest, and regular presenter at Bicep, Azure landing zone, and Sovereign Cloud community calls. Regular social media (LinkedIn) and YouTube videos posted about products such as ALZ and AVM. Blog previously ranked in top 50 Azure blogs globally.
@@ -70,7 +70,7 @@ Experience:
           - Microsoft Ignite 2025 speaker — delivered Labs and theatre sessions on enterprise cloud migration and modernisation with Azure landing zone and Azure Verified Modules
           - South Coast Summit 2025 speaker — presented "Azure landing zone + Subscription Vending + Azure Verified Modules == The Perfect Azure Journey"
           - Guest on the Ctrl+Alt+Azure podcast
-          - Regular presenter at Bicep, Azure landing zone, Azure Vereifed Modules and Sovereign Cloud external community calls & YouTube videos
+          - Regular presenter at Bicep, Azure landing zone, Azure Verified Modules and Sovereign Cloud external community calls & YouTube videos
           - Speaker on Microsoft Sovereign Cloud strategy and enablement (LevelUp sessions) reaching hundreds of field engineers globally
           - Architect and deliver enterprise-scale Azure solutions for strategic customers across multiple industries globally
           - Mentor and enable field engineers, partners, and customers on Azure platform best practices and landing zone adoption
@@ -90,7 +90,7 @@ Experience:
           - Led the Enterprise Scale v-team in technical strategy and architecture pillar, directly shaping the framework that became the Azure landing zone product
           - Authored and reviewed public-facing Azure documentation on ALZ including sandbox guidance, Azure Policies, and networking critical design areas
           - Identified repeatable customer patterns and began codifying them into what would become Azure landing zone, Subscription Vending, and the foundations of AVM
-          - Developed Infrastrcuture-as-Code (IaC) solutions using Terraform and Bicep, establishing engineering practices that scaled across the field
+          - Developed Infrastructure-as-Code (IaC) solutions using Terraform and Bicep, establishing engineering practices that scaled across the field
           - Collaborated directly with product engineering teams to feed customer insights and field telemetry back into Azure platform improvements
           - Created the Azure Baristas internal and partner-facing hack for Azure landing zone enablement
           - Delivered architecture and engineering solutions for enterprise customers across complex, multi-region Azure environments
@@ -276,7 +276,7 @@ Skills:
       - Azure Resource Manager (ARM)
       - Azure Verified Modules
       - Microsoft Sovereign Cloud
-  - Family: Infrastrcuture-as-Code (IaC)
+  - Family: Infrastructure-as-Code (IaC)
     Items:
       - Terraform
       - Bicep

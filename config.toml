@@ -25,4 +25,6 @@ disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap"]
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
+      # Allow raw HTML (e.g. <br>, <a>) in profile YAML processed by markdownify.
+      # Content is fully owner-authored; no user-generated input is rendered.
       unsafe = true
